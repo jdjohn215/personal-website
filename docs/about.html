@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-bde7cfe73309ee1b4eca639e0a08c217.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,8 +118,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">about me</a></li>
+  <li><a href="#about-this-website" id="toc-about-this-website" class="nav-link" data-scroll-target="#about-this-website">about this website</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -143,8 +153,19 @@ ul.task-list li input[type="checkbox"] {
 <p>As more and more of the internet gets eaten by the continuous algorithmic scroll, my hope is to preserve a bit of the old, eclectic internet I grew up with.</p>
 <p>To that end, this website includes various personal and professional written projects. Many of these appeared somewhere else first; my goal is to gather and preserve them all in one convenient place. It’s a work in progress.</p>
 <p>If you find something that interests you, feel free to email me at jdjohn215 [at] gmail [dot] com.</p>
+<div style="float: left; margin: 5px;">
+<p><a href="site-assets/john-simon.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="site-assets/john-simon.png" class="img-fluid" width="250"></a></p>
+</div>
+<section id="about-me" class="level2">
+<h2 class="anchored" data-anchor-id="about-me">about me</h2>
+<p>I live in Milwaukee, Wisconsin where I’m employed as a Research Fellow at the Marquette University Law School. At work, I mainly study housing, demographics, and elections in Wisconsin. My other interests, which I occasionally write about, include ecology, geography, 20th century history, and American religion.</p>
+</section>
+<section id="about-this-website" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-website">about this website</h2>
+<p>This is a static website, built with the <a href="https://quarto.org/">Quart</a> technical publishing system. You can see all the source code in <a href="https://github.com/jdjohn215/personal-website/">this Github repo</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -570,6 +591,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

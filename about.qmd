@@ -7,3 +7,16 @@ As more and more of the internet gets eaten by the continuous algorithmic scroll
 To that end, this website includes various personal and professional written projects. Many of these appeared somewhere else first; my goal is to gather and preserve them all in one convenient place. It's a work in progress.
 
 If you find something that interests you, feel free to email me at jdjohn215 [at] gmail [dot] com.
+
+::: {style="float: left; margin: 5px;"}
+![](site-assets/john-simon.png){width="250px"}
+:::
+
+
+## about me
+
+I live in Milwaukee, Wisconsin where I'm employed as a Research Fellow at the Marquette University Law School. At work, I mainly study housing, demographics, and elections in Wisconsin. Other interests I occasionally write about include ecology, geography, 20th century history, and American religion.
+
+## about this website
+
+This is a static website, built with the [Quarto](https://quarto.org/) technical publishing system. You can see all the source code in [this Github repo](https://github.com/jdjohn215/personal-website/).
