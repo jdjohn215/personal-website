@@ -1,0 +1,54 @@
+---
+title: "Perceptions of Donald Trump a month into his second term"
+date: "February 12, 2025"
+author: "John Johnson"
+---
+
+
+The [stability](https://www.nbcnews.com/news/us-news/donald-trump-s-presidency-was-roller-coaster-his-approval-ratings-n1255360) of Donald Trump’s approval rating was practically a meme during his first administration. No matter the headlines, scarcely any voters appeared to change their minds about the president, at least not when asked the simple question, Do you approve or disapprove of how Donald Trump is handling his job as president?
+
+It remains to be seen whether Trump in his second term will enjoy (or suffer) from the same apparently locked-in public attitudes. But to shed more light into what Americans really think about him, the Marquette Law School Poll has begun asking two open-ended questions. What do you [like/dislike] about Donald Trump? We randomize the order of the two questions, and respondents can write whatever they want.
+
+Each survey, we ask about 1,000 adults these questions. All but two or three percent share a response.
+
+![table showing views of trump](graphics/trump-perceptions-feb-table.png)
+
+Donald Trump won in 2024 because he beat Harris by about 38 points among voters holding mixed views of him. He enjoyed especially high support among those who hadn’t voted at all in 2020.
+
+Most of these people still approve of how Trump has begun his second term. However, Trump’s approval rating has slipped with this group, relative to December 2024.
+
+In December 2024, 53% of adults approved (and 47% disapproved) of how Trump had handled his job during his first term. About a month into Trump’s second term, 48% approve and 52% disapprove of how Trump is currently handling his job.
+
+The drop in approval is entirely due to lower views of Trump’s current job performance among those with more ambivalent views of him.
+
+Among those who only listed things they like about Trump, 96% approved of his past job performance in the December poll and 96% likewise approve of his current job performance in the February poll.
+
+Conversely, 97% of those with only negative things to say about Trump disapproved of his past job performance in December and disapprove of his current job performance in February.
+
+But among those with mixed views of Trump, 77% gave him retrospective approval in December, falling to 67% approval in February.
+
+## Themes in the open-ended responses
+
+Some voters express idiosyncratic combinations of views when given the opportunity. You’ll find the occasional conservative whose only complaint about Trump is his support for Israel or the odd Harris voter who dislikes Trump’s “racist attitude” but appreciates that he “doesn’t drink or smoke dope.”
+
+But most responses fall into familiar categories. Here are a few themes that stood out to me.
+
+* Outside of the 36% of adults who despise Trump, Trump’s hyper-aggressive first month in office is usually perceived favorably. Many people said things like, “he’s fulfilling campaign promises,” or “He has already done more in a few days than Biden did.”
+
+* A common complaint among those who generally like Trump is his communication style. Some representative comments: “he talks too much”; “the way he talks, very crude”; and “mean tweets, rehearsing [sic] his wins in election too often.”
+
+* On the other hand, even some people who disapprove of him like aspects of his communication. “Confidence, has charisma, is funny on occasion”; “He’s funny. He says what he thinks.”
+
+* Quite a few people complained about Trump’s pardoning of the January 6th rioters, and few or none mentioned it favorably.
+
+Finally, these data also undermine a point I have occasionally heard from conservative commentators. Referencing the [more “muted” response](https://www.theatlantic.com/ideas/archive/2025/01/executive-orders-absent-anger/681393/) to Trump’s second term from Democratic politicians and left-leaning organizations, some have argued that opposition toward Trump’s first term was largely an elite, media creation.
+
+On the contrary, in reading these open-ended responses I see no diminution of opposition to Trump. If anything, the vitriolic tone may have intensified among those who like nothing about him. This group is not a majority of the country. It includes under 40% of adults in our sample, but is is more than twice as large as the group of people with only positive things to say about Trump.
+
+During Trump’s first term, his opponents turned out at unusually high levels–flipping seats during special elections and midterms at a startling clip. Democrats will look to repeat that playbook in 2025 and 2026. The [surprise victory](https://www.bleedingheartland.com/2025/01/30/how-mike-zimmer-pulled-off-an-upset-in-iowa-senate-district-35/) of a Democratic candidate in a Trump +21 Iowa state senate district is a small, early indication that this strategy may work.
+
+## Explore the data
+
+The above is just my interpretation of these responses. I strongly encouraged you to read them for yourself. [Click here](https://lubarcenter.shinyapps.io/janfeb-2024-trump-views/#explore-the-data) to access our web app for viewing responses. The tool allows you to see 5 randomly* selected responses with each click of the button. Some of these responses contain profane language and many contain typos. We present them in unedited form.
+
+![table showing excerpted answers](graphics/trump-perceptions-feb-excerpts.png)

@@ -1,0 +1,97 @@
+---
+title: "Thousands of Milwaukee homes are no longer owned by city residents in a massive transfer of wealth since the Great Recession"
+date: "January 30, 2020"
+author: "Mike Gousha and John Johnson"
+---
+
+*This article was originally published in the Milwaukee Journal Sentinel on January 30, 2020.*
+
+The Great Recession more than a decade ago hit Milwaukee hard. When the housing market collapsed, the city suffered through a tidal wave of foreclosures. Residential property values plummeted; they didn’t bottom out until 2016.
+
+Since then, housing values in most parts of the city have begun to rebound,  although they generally remain well below their pre-recession peaks.
+
+But Milwaukee’s housing market has changed in other fundamental ways:
+
+* There has been a dramatic decline in residential properties occupied by their owners.
+
+* The city has seen a transfer of hundreds of millions of dollars in housing wealth.
+
+Simply put: Thousands of residential properties in Milwaukee are no longer owned by city residents. They’re owned, instead, by individuals and companies with mailing addresses in the suburbs, other parts of Wisconsin, or out-of-state altogether.
+
+These trends raise questions about the long-term health of city neighborhoods, particularly those that are home predominantly to people of color.
+
+This latest reporting is a follow-up to a story in November that looked at the impact of the end of Milwaukee’s residency requirement. Data compiled and analyzed by Marquette Law School’s Milwaukee Area Project found thousands of middle-class residents — city and Milwaukee Public Schools employees — were [no longer living in Milwaukee](https://www.jsonline.com/story/news/solutions/2019/11/14/milwaukee-city-workers-left-droves-after-residency-rule-ended/2533469001/).
+
+But these other housing changes — the decline in owner-occupancy coupled with a sharp increase in properties owned by non-city residents — caught our attention.  
+
+Here’s how we analyzed the publicly available data:
+
+We began by looking at owner-occupancy rates for residential properties in the city. Owner-occupancy was determined by comparing the address of the property with the owner’s address.
+
+We defined residential properties as single-family homes, duplexes, triplexes, four-unit dwellings, and condominiums.  That constituted 70% of all housing units in Milwaukee in 2019.  We excluded larger commercial apartment buildings from the analysis. We consider houses to be “rentals” when they aren’t owner-occupied.
+
+Using this definition, we determined that in 2019, Milwaukee had about 87,700 single-family homes, 33,400 duplexes, 11,200 condos, and 2,600 triplexes or four-unit dwellings. We examined data from 1990 to 2019.
+
+Here’s what we learned.
+
+The share of owner-occupied residential properties in Milwaukee remained steady during the 1990s and early 2000s.  But the Great Recession proved to be a great disrupter.
+
+In 2005, at the market’s peak and just before the recession, the city recorded 107,000 owner-occupied properties. By 2019, that number had fallen to 93,000. In 2005, 80% of the residences were owner-occupied.  By 2019, that number had fallen to 69%.
+
+Owner-occupancy rates have declined for every housing type. They were down 12% each for single-family homes and duplexes. Triplexes and four-unit dwellings were down 10%. Condos fell by 9%.
+
+The trend is evident citywide but is much more pronounced on the north and west sides of Milwaukee, in the 1st, 2nd, and 7th aldermanic districts.   
+
+• In the 1st district, owner-occupancy fell from 78% in 2005 to 56% in 2019.
+
+• In the 2nd district, it fell from 87% to 65% during the same period.
+
+• In the 7th district, it dropped from 74% to 54%.
+
+Meanwhile, owner-occupancy in the 3rd district (east side), 4th district (downtown), 11th district (southwest), and 13th district (far south) all declined by just 5%.
+
+As that pattern suggests, minority communities were hurt the most by the housing crisis and the Great Recession. Homeownership fell by an average of 5.5% in mostly white census tracts but declined by 10.3% in mostly Latino census tracts, and 16.6% in majority-black census tracts.
+
+So, we know more city residents are renting. But who owns the properties they’re living in?
+
+A review of the data provides two answers. 
+
+## Number of non-resident landlords grows in Milwaukee
+
+First, the number of landlords owning multiple properties in Milwaukee has dramatically increased. The popularity of limited liability companies (LLC’s) has skyrocketed from a negligible number of properties owned in the early 1990s to more than 13,000 in 2019.  LLC ownership is concentrated in single-family homes and duplexes. It quadrupled from 2005 to 2019. 
+
+Second, the number of landlords residing outside the city has exploded. Half of all rented properties are now owned by someone outside Milwaukee. From 2005 to 2019, the holdings of suburban landlords grew 70%, from nearly 7,700 properties to more than 13,000.
+
+During that same period, residential properties owned by someone who lives in Wisconsin but not in the suburbs grew from just under 1,000 to nearly 2,300.
+
+But perhaps the most significant development in the city’s housing market in the last 15 years is this:
+
+Landlords with addresses outside Wisconsin quadrupled their holdings over that time, from 1,300 properties to more than 5,800.
+
+In the 2nd district on the city’s northwest side, more than a third of all residential properties — 35% — are owned by a landlord. Fewer than half of these rented properties are owned by someone who lives in Milwaukee. Thirty-six percent are owned by a landlord with a suburban address and 17% by someone with an out-of-state address.
+
+The number of properties owned by someone outside Wisconsin grew from 77 in 2005 to 573 in 2019.
+
+## Housing wealth in Milwaukee is being transferred to out-of-state investors
+
+The change in ownership of residential properties in Milwaukee has resulted in an enormous transfer of family housing wealth to out-of-state individuals and businesses.  Landlords with Illinois addresses now own more than 1,600 residential units in Milwaukee. Landlords in California own 1,400 units. Texas landlords own nearly 700. Keep in mind that none of these figures includes large apartment buildings.
+
+In all, out-of-state landlords now own more than $580 million in residential properties in the city of Milwaukee. That number grew by $396 million in just the last 15 years.   
+
+While it’s not a prediction of the future, it’s worth noting that median property values in aldermanic districts where owner-occupancy rates have declined the most have been among the slowest to recover from the Great Recession. And even when property values have recovered, Milwaukee residents have received a dwindling share of the returns.
+
+## Some of the questions Milwaukee faces
+
+A recent story in the publication, CityLab, noted that more than [12 million single-family homes are currently being rented](https://www.citylab.com/life/2019/10/single-family-house-rental-recession-homeowner-management/599371/) in the United States.  Following the housing collapse, attitudes toward homeownership changed. Some individuals couldn’t afford to buy a home; others no longer saw owning a home as part of a strategy to create personal wealth.
+
+So the trend away from owner-occupancy is not simply a Milwaukee phenomenon. But what’s happening in Milwaukee does raise interesting questions:
+
+Is the decline in owner-occupancy a long-term trend?
+
+Will the number of residential properties owned by people who don’t live in the city — or state — continue to grow?  
+
+What does the decline mean for individuals and their ability to create and build wealth — particularly for people of color whose neighborhoods have been affected the most by this trend?
+
+The answers to those questions will be important. For decades, Milwaukee was a city of strong, cohesive neighborhoods, its residents bound in part by something they had in common: the investment in their home.
+
+For some parts of the city, that is no longer the case.

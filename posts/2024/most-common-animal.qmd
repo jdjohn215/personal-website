@@ -1,0 +1,10 @@
+---
+title: "The Most Common Domesticated Animal in Every County"
+date: "February 18, 2024"
+---
+
+This started as a joke, but actually the research into ["human domestication"](https://www.science.org/content/article/early-humans-domesticated-themselves-new-genetic-evidence-suggests) is pretty interesting.
+
+:::{.column-page}
+![choropleth map showing the most common animal in every county](graphics/most-common-domesticated-animal.jpg)
+:::

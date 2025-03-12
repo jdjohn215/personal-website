@@ -1,0 +1,91 @@
+---
+title: "An appreciation of walking to the polls"
+author: "John Johnson"
+date: "October 21, 2024"
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+
+dist.by.race <- structure(list(distance = structure(1:4, levels = c("0-5 min.", 
+"5-10 min.", "10-15 min.", "15+ min."), class = "factor"), total = c(12.1701668697307, 
+43.8951562686416, 27.6376984198086, 16.2969784418191), Black = c(11.0593487677296, 
+41.1805601964878, 29.3177321399112, 18.4423588958713), White = c(11.9506624217114, 
+45.2468064445557, 26.8712781907629, 15.9312529429701), `Hispanic or Latino` = c(15.157182330869, 
+48.0302511560595, 25.6412752213298, 11.1712912917417), Asian = c(10.5512495846103, 
+40.7307774216379, 27.197011347034, 21.5209616467177)), row.names = c(NA, 
+-4L), class = c("tbl_df", "tbl", "data.frame"))
+```
+
+During my years in Milwaukee, I’ve lived in 4 different neighborhoods. The walking distances to my wards’ polling places have been as follows: 0.2 miles, 0.2 miles, 0.3 miles, and roughly 400 ft. Walking has always been the simplest way to cast my ballot.
+
+This is true for many Milwaukeeans. Compared to most parts of America, including most major cities, Milwaukee excels at making the polls convenient to access.
+
+Over 56% of houses are within half a mile, or a 10 minute walk, of their designated election day polling place. And I’m not counting distance as the crow flies. This is the distance it takes to walk on streets and paths accessible to pedestrians.
+
+Specifically, I calculate that 12.4% of Milwaukee houses are located fewer than 5 minutes from their polling place by foot. Another 44.1% are within a 5-10 minute walk; 27.4% are a 10-15 minute walk away; and just 16.1% are further.
+
+For these calculations, I assume that it takes 1 minute to walk 80 meters, or 262 feet. This works out to 5 minutes per quarter mile, a [common standard](https://morphocode.com/the-5-minute-walk/) for walkability.
+
+For instance, here are Milwaukee wards 240 and 285, both of which vote at the Humboldt Park Pavilion in the Bay View neighborhood. Together, these two wards have about 2,300 registered voters living in 1,600 housing units.
+
+* Because the polling place is in the middle of the park, only a tiny sliver of houses, about 1%, are within a 5 minute walk. This area is shown in purple.
+
+* Over half, 54%, are in the blue area, which is a 5-10 minute walk from the pavilion.
+
+* Another 39% are 10-15 minutes away, shown in green.
+
+* The remaining 6% of houses are in the yellow fringes of the two wards, where walking to the pavilion takes 15 minutes or more.
+
+![map of walktime to Humboldt Park Pavilion](graphics/walktime_HumboldtPark.png)
+
+Here is another polling place, the Clinton Rose Senior Center, near the intersection of King Drive and Burleigh St. This location also serves about 1,600 homes, but more of them are apartments. In fact, 12% of the housing units are within a 5 minute walk, 71% are within 5-10 minutes, and the remaining 17% are 10-15 minutes away.
+
+![map of walktime to the Clinton Rose Senior Center](graphics/walktime_ClintonRose.png)
+
+Click [here to open an interactive map](https://law.marquette.edu/assets/community/lubar/posts/mke-ward-isochrones.html) with statistics for each ward in the city. From the interactive map, you can click the ward name in each tooltip to open a png file with each polling place, as mapped above.
+
+As you might expect, polling places are closest together in the most densely populated sections of the city. Many of the areas which appear poorly covered on the map are not actually populated—this includes the industrial Menomonee Valley, the port, the airport, and many large parks and cemeteries.
+
+Exceptions include the far north and northwest sides, where few residents live within convenient walking distance of their polling place. Here the normal street grid breaks down, and many people live in subdivisions with poor pedestrian connectivity. The population is also less dense, so individual wards are larger.
+
+![screenshot of citywide interactive map](graphics/walktime_citywidescreenshot.png)
+
+The citywide map also reveals some wards which are physically much closer to a different polling place than their own. In these cases, it might be possible to better optimize ward-to-polling place assignments.
+
+Overall, access to polling places is fairly even across the city’s racial or ethnic groups. Using 2020 census data, I estimate that 52% of Black, 57% of white, 63% of Hispanic, and 52% of Asian residents live within a 10 minute walk of their polling place. Conversely, those living 15 minutes away or further includes 18% of Black, 16% of white, 11% of Hispanic, and 22% of Asian residents.
+
+Proximity is highest for Latino Milwaukeeans because their numbers are highest in the densely populated near south side. In contrast, much of Milwaukee’s Asian population lives in the less dense far north and northwest sides of the city.
+
+```{r}
+dist.by.race |>
+  gt(rowname_col = "distance") |>
+  fmt_percent(columns = 2:6, decimals = 0, scale_values = F) |>
+  tab_header(title = "Population by walking time to polling place",
+             subtitle = "City of Milwaukee") |>
+  tab_source_note("Demographic data is from the 2020 census and is assigned into isochrone areas using a housing-unit crosswalk.")
+```
+
+My methodology is too detailed to easily replicate across the United States, but fortunately the federal government collects information about polling places after each election through the biennial [Election Administration and Voting Survey](https://www.eac.gov/sites/default/files/EAVS%202022/2022_EAVS_FINAL_508c.pdf). I downloaded the 2022 data and compared the number of registered voters with the number of polling places in each jurisdiction.
+
+Among the largest 500 jurisdictions in the country, Milwaukee ranked 51st for the most polling places per registered voters. There was one polling place for every 1,661 registered voters in 2022. The median, across the largest 500 jurisdictions, was one polling place for every 3,073 voters.
+
+There is a lot of variation in this metric. Cities in Pennsylvania score especially well, holding 9 out of the top 10 spots. Philadelphia County had 630 voters per polling place, Allegheny County 710.
+
+In contrast, most California cities have few polling places for their size. Los Angeles County had just 640 election day polling places in 2022, one for every 11,581 registered voters. For San Diego County it was one for 11,002 voters, for Orange county 11,267.
+
+Milwaukee also provides proportionally more polling places than other cities in Wisconsin. By necessity, small towns often have higher rates of polling places per capita. But Milwaukee has a higher rate of polling places than all of the other 30 largest cities in the state. The largest community with more per capita than Milwaukee is Stevens Point (pop. 26,000).
+
+Election administration is an increasingly difficult job, subject to conspiracy theories and threats of violence. It’s worth remembering and appreciating that, in Milwaukee, voting is still made admirably easy. For most Milwaukeeans, their polling place (and the opportunity to register) is just a short walk out their front door on November 5th.
+
+## How I did this
+
+See [this GitHub repository](https://github.com/BlueBookMKE/walking-to-the-polls) for detailed code and data.
+
+I downloaded data from [OpenStreetMap](https://www.openstreetmap.org/), subsetted pedestrian-friendly streets and paths, then converted these paths and their nodes into a network. An advantage to using OSM data (in addition to its being free) is that it includes informal paths, not just strictly official walkways as Google Maps generally does.
+
+I used Jeremy Gelb’s excellent [spNetwork](https://jeremygelb.github.io/spNetwork/articles/Isochrones.html) R package to calculate [isochrones](https://en.wikipedia.org/wiki/Isochrone_map) around each polling place. The original isochrone just consists of lines, so I converted each isochrone to polygons using a minimum concave hull algorithm implemented in the [concaveman](https://github.com/joelgombin/concaveman) R package. Finally, I subsetted each of these isochrone polygon sets to just the ward boundaries served by each polling place.
+
+I combined all these individual polling place polygon isochrones, intersected them with the centroid coordinates for each parcel in the city, and aggregated the number of residential units in each.

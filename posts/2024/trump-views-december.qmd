@@ -1,0 +1,96 @@
+---
+title: "What do voters and non-voters really think about Donald Trump?"
+date: "December 18, 2024"
+author: "John Johnson"
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+
+tab1 <- structure(list(open_ended_status = c("Can name likes and dislikes", 
+"Doesn't dislike anything", "Doesn't like anything", "no answer", 
+"Total"), n = c(544.7229, 126.1229, 372.9673, 19.1863, 1062.9994
+), `pct of total` = c(51.2439517839803, 11.8648138465553, 35.0863133130649, 
+1.80492105639947, 100), Harris = c(17.2769127202106, 0.977935014180613, 
+75.9984856581261, 31.0049358135753, 36.1940843992951), Trump = c(55.4182502699997, 
+76.4215697545806, 0.764356553510187, 17.5505438776627, 38.0507364350347
+), `Third party` = c(3.67988935291687, 2.97598612147358, 1.37977243581408, 
+5.8145656014969, 2.82787553784132), Nonvoter = c(23.6249476568729, 
+19.6245091097652, 21.8573853525497, 45.6299547072651, 22.927303627829
+)), row.names = c(NA, -5L), class = c("tbl_df", "tbl", "data.frame"
+))
+
+tab2 <- structure(list(open_ended_status = c("Can name likes and dislikes", 
+"Doesn't dislike anything", "Doesn't like anything", "no answer", 
+"Total"), n = c(544.7229, 126.1229, 372.9673, 19.1863, 1062.9994
+), `pct of total` = c(51.2439517839803, 11.8648138465553, 35.0863133130649, 
+1.80492105639947, 100), Biden = c(17.6641554816219, 2.21315875229637, 
+70.9010414585944, 22.6312525083002, 34.5994362743761), Trump = c(46.0420701975261, 
+59.1070297305248, 1.24807188190493, 17.5505438776627, 31.3613911729395
+), `Third party` = c(3.48722258601575, 1.01456595114765, 1.7324575103501, 
+5.8145656014969, 2.62017081100892), Nonvoter = c(32.7201775434813, 
+37.6652455660312, 25.3383607624583, 54.0036380125402, 31.1010429544927
+)), row.names = c(NA, -5L), class = c("tbl_df", "tbl", "data.frame"
+))
+```
+
+Donald Trump is the most famous person in, arguably, the world. His name was googled more than any other in 2024, 2023, 2021, and 2019. To better understand how American adults feel about this ubiquitous figure, we asked each of the 1,063 respondents in the Marquette Law School Poll national survey of adults, December 2-11, 2024, to answer two questions in their own words.
+
+*	What do you like about Donald Trump?
+*	What do you dislike about Donald Trump?
+
+The order of the two questions was randomized. Since the survey was conducted online, respondents could write as much as they wished. (These “open-ended questions” were part of a more traditional survey, the subject of separate news releases.)
+
+In the 2024 election, 36% of our sample voted for Kamala Harris, 38% for Donald Trump, 3% for a third-party candidate, and 23% didn’t vote. The sample gets the mix of Harris and Trump supporters right, though it overrepresents voters as a whole. [Early estimates](https://election.lab.ufl.edu/2024-general-election-turnout/) suggest that about 36% of eligible voters didn’t participate in the 2024 election.
+
+We classified each of the respondents by whether or not they answered both questions. A majority—51% of respondents—listed at least one thing they liked and disliked about Trump. (We classified clearly sarcastic responses as non-answers.) Listing things they dislike about Trump but including nothing positive were 35%. Fewer adults, 12%, listed positive things about Trump but nothing negative.
+
+## Perceptions of Trump and vote choice
+
+The table below shows how each of those groups voted in 2024. Trump and Harris each won equal shares of the adults (76%) with, respectively, only positive or only negative views of the former president. Among those listing both likes and dislikes of Trump, 55% voted for Trump, 17% for Harris, 4% for a third party, and 24% did not vote.
+
+In other words, just over a third of adults held wholly negative views of Trump and just over 10% held wholly positive views. Their votes reflect those views. But Trump won the lion’s share of the vote among people with mixed views of him.
+
+```{r}
+tab1 |>
+  gt(rowname_col = "open_ended_status") |>
+  fmt_number(columns = n, decimals = 0) |>
+  fmt_percent(columns = 3:7, decimals = 0, scale_values = F) |>
+  tab_style(style = cell_borders(sides = "top"),
+            locations = list(cells_stub(rows = 5),
+                             cells_body(rows = 5))) |>
+  tab_stubhead("About Donald J. Trump") |>
+  tab_header(title = "2024 vote of U.S. adults by their view of Trump")
+```
+
+These data also shed some light on how Trump managed to defeat Harris after losing to Joe Biden in 2020. We asked respondents about their participation in the 2020 presidential election. Thirty-five percent remembered voting for Biden, 31% for Trump, 3% for third parties, and 31% said they didn’t vote. Recalled vote may be error-prone, but in this case it closely matches Joe Biden’s 4.5-point margin of victory in 2020.
+
+Harris won about the same share as Biden had among the 35% of adults who couldn’t name anything they like about Trump. Like Biden, she won practically none of the vote among those who dislike nothing about Trump. And Harris won about the same fraction of the vote as Biden among those naming both likes and dislikes about Trump.
+
+While Harris’ vote share changed little from Biden’s in each group, Trump’s vote share grew among those with mixed feelings. Trump won 55% of adults with mixed feelings, up from 46% in 2020. This was possible because the share that did not vote in this group fell from 33% in 2020 to 24% in 2024. Likewise, Trump in 2024 won 76% of the vote among those expressing no negative views of him, up from 59% among these same adults in 2020. And only 20% of these adults didn’t vote in 2024, down from 38% in 2020.
+
+```{r}
+tab2 |>
+  gt(rowname_col = "open_ended_status") |>
+  fmt_number(columns = n, decimals = 0) |>
+  fmt_percent(columns = 3:7, decimals = 0, scale_values = F) |>
+  tab_style(style = cell_borders(sides = "top"),
+            locations = list(cells_stub(rows = 5),
+                             cells_body(rows = 5))) |>
+  tab_stubhead("About Donald J. Trump") |>
+  tab_header(title = "2020 vote of U.S. adults by their view of Trump in Dec. 2024",
+             subtitle = "among adults surveyed Dec. 2-11, 2024")
+```
+
+In our December 2024 sample, Harris defeated Trump by 3 percentage points among 2024 voters who also voted in 2020. Among 2024 voters who didn’t vote in 2020, she lost by 12 points.
+
+Our survey is just one data point in a sense, but it adds to the [emerging body of evidence](https://www.npr.org/2024/11/18/nx-s1-5183063/trump-turnout-republican-voting-access) that Trump’s campaign successfully turned out infrequent, “low-propensity” voters who like Trump but often stay home.
+
+## Explore the data
+
+There is no substitute for reading the words of voters themselves. [Click here to access our web app](https://lubarcenter.shinyapps.io/dec-2024-trump-views/#explore-the-data) for viewing responses. The tool allows you to see 5 randomly* selected responses with each click of the button. Some of these responses contain profane language and many contain typos. We present them in unedited form.
+
+--------------------------------------------------------------------------------
+\* Technically, the tool uses a weighted random draw, so that responses are shown in proportion to their prevalence in the population of respondents.

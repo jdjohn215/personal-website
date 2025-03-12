@@ -1,0 +1,131 @@
+---
+title: "By one key measure, household income, metro Milwaukee is worse off than it was in 1980"
+date: "October 30, 2020"
+author: "Mike Gousha and John Johnson"
+---
+
+*This article [originally appeared](https://www.jsonline.com/in-depth/news/solutions/2020/10/30/milwaukee-worse-off-now-than-1980-based-household-income/6041254002/) in the Milwaukee Journal Sentinel.*
+
+“Are you better off than you were four years ago?” 
+
+That question, asked by Republican presidential candidate Ronald Reagan in 1980, was pivotal in the race for the White House.
+
+So, in the spirit of this election year, let’s ask the question again, but with a twist.
+
+Is the metro Milwaukee area better off today than it was 40 years ago, in 1980, the year of Reagan’s famous words?
+
+The economic impact of the COVID-19 outbreak makes that a tricky question. Some people would argue that given the moment, the answer is “no.” But even before the pandemic hit, metro Milwaukee was faring worse than it did in 1980 in a key measurement of economic prosperity: median household income. 
+
+In real dollars, adjusted for inflation, households today in our metropolitan area earn less than they did 40 years ago.
+
+The city of Milwaukee has seen the sharpest decline in income, followed by the Milwaukee County suburbs. But perhaps surprisingly, suburbs and communities in the WOW counties — Waukesha, Ozaukee, and Washington — have also struggled, especially in recent years.
+
+The data used for this story was compiled and analyzed as part of the Milwaukee Area Project at Marquette University Law School’s Lubar Center for Public Policy Research and Civic Education.
+
+It reinforces some of what we know about our metro area. 
+
+There is a large wealth gap between the city and the communities that surround it, as well as big differences in white and minority household income.
+
+But the data also reveals a region — arguably the economic engine of the state — still struggling to find its footing after two recessions, one in the early 2000s and the Great Recession of 2008. Our household income growth lagged the nation even before we were hit by a third economic contraction brought on by the COVID-19 pandemic.
+
+## Where the data came from
+
+Before we take a closer look at the data, let’s talk about where we got it. We calculated demographic and household income using individual Census interviews from the Integrated Public Use Microdata Series (IPUMS USA at the University of Minnesota). The most recent data is from 2018.
+
+National income data is from the Census Bureau’s Current Population Survey Annual Social and Economic Supplement.
+
+Wage data is from the Quarterly Census of Employment and Wages conducted by the Bureau of Labor Statistics. The most recent data is from 2019.
+
+We focus in this story on median household income rather than per capita income. Median household income includes all income earned by those living in a household. That could mean families, unmarried couples, or singles. We think it’s the most accurate way to measure economic prosperity. Here’s why: Rapidly growing wages among the richest workers can raise per person averages even when people in the middle see no improvement. Also, many of the largest expenses are made at the household level, so two people earning $40,000 each are better off economically when they live together, even though their per capita income is unchanged.
+
+When we compare household income from one year to another, we adjust for inflation. We’re talking about “real dollars.”
+
+And we use the U.S. Census Bureau’s definition of the Milwaukee metro area — Milwaukee, Waukesha, Ozaukee, and Washington counties.
+
+To understand what’s happened in metro Milwaukee since 1980, it’s helpful to note what has and hasn’t changed during the last four decades.
+
+Household size has remained remarkably consistent since 1980. Forty years ago, the average household in the city of Milwaukee had 2.5 members; now it is 2.4. The average suburban household had 2.8 members in 1980 and 2.3 now. This larger decline is mostly because there are fewer suburban families with kids at home. The share of households with one earner compared to two has changed very little in either the city or the suburbs since 1980.
+
+What has changed is the region’s geographic and economic balance of power during the last four decades.
+
+The city’s share of the metro’s population shrank.
+
+Milwaukee County suburbs’ share remained about the same.
+
+Population in the WOW counties grew.
+
+In 1980, 31% of the residents of metro Milwaukee lived outside Milwaukee County. Today, nearly 40% do. But the WOW counties’ evolution from commuter suburbs to full participant in the metro economy is the bigger story. In 1980, 15% of metro Milwaukee’s jobs were in the WOW counties. Today that number is 42%.
+
+But what about the region’s relative prosperity?
+
+In 1980, the nation’s median household income was $54,000. The city of Milwaukee closely mirrored that number, at $53,000. But by 2018 — the last year for which data was available — the nation’s median household income had grown to $64,000. The city’s household income had fallen to $44,000.
+
+The city’s suburbs and surrounding areas remain relatively prosperous compared to the rest of the nation, and especially the city. But even their median household income today — $73,000 — is $5,000 less than it was in 1980.
+
+Some of the decline can be traced to events in the first decade of the 21st century. Times were tough for the average American household. The nation experienced two economic downturns, including the Great Recession of 2008.
+
+Metro Milwaukee is still trying to recover.
+
+Milwaukee has become a poorer city since the turn of the century. In real dollars, households in Milwaukee today earn $6,000 a year less than they did in 2000.
+
+Residents outside the city experienced the same downward trend.  Median household income in the suburbs and outlying areas peaked at $86,000 in 2000. Since then, income has fallen $13,000 dollars per household. In Waukesha, the largest and wealthiest suburban county, incomes declined $8,000. Median incomes fell $14,000 in Ozaukee County and $13,000 in Washington County.
+
+While they both saw declines, the economic fortunes of the suburbs and the city they surround couldn’t be more different. The median household outside the city earns nearly $30,000 a year more than a household in the city.
+
+The metro area’s racial disparity is glaring. Household income for Black and Latino residents today is less than what it was in 1980.  Black residents today have a median household income of $30,000 in the city and $39,000 in the suburbs. Latino residents have a median household income of $45,000 in the city and $52,000 in the suburbs.
+
+What has happened to Black household income in Milwaukee is especially concerning. Since 1980, it has declined significantly across the board. The poorest households became poorer. Middle-class household income fell roughly 20%. That stands in stark contrast to the U.S. average for black households, which showed at least some household income growth across all income groups.
+
+ In 1980, a middle-class Black family in Milwaukee could expect to earn about $6,000 more than the national average for Black households. Now, a middle-income Black family in Milwaukee earns around $10,000 less.
+
+White residents of the metro area fare significantly better. Median household income today is $56,000 in the city and $77,000 in the suburbs.  When adjusting for inflation, that’s roughly the same as it was in 1980.
+
+One interesting finding in our analysis was this: Consistent with the “back-to-the-city” phenomenon, white city of Milwaukee residents were least-harmed by the Great Recession. Urban white households were the only group in our data to have almost completely recovered financially.
+
+Metro Milwaukee’s household income trends have moved in the opposite direction of national trends. We’re lagging the nation in growth. The question is why.  
+
+After all, since 2000, most occupations saw their average annual wages rise. In addition, labor force participation rates remained remarkably consistent. There are somewhat fewer men now in the workforce, but that difference has been made up by women.
+
+A closer examination of data from the Bureau of Labor Statistics reveals what’s happened.
+
+## The role of manufacturing
+
+The impact of the Great Recession saw metro Milwaukee shed 68,000 jobs from 2000 to 2010.  But in the years that followed, the economy added back about 62,000 jobs, leaving us with about 6,000 fewer jobs than we had 19 years ago.
+
+And 4,400 of the jobs lost were in the public sector.
+
+Prior to the pandemic, the private sector had basically recovered all its job losses during the Great Recession.  But dig a little deeper, and you see a significant change that explains the decline in the region’s household income: the disappearance of thousands of higher-earning jobs.
+
+Manufacturing still accounts for 16% of private-sector jobs in metro Milwaukee. But today, there are 45,000 fewer manufacturing jobs than there were in 2000 — only 10 metros have lost more. Manufacturing jobs pay an average of $67,000 a year.
+
+There are also 7,000 fewer jobs in the finance and insurance sector. Those jobs pay an average of $100,000 a year.
+
+Many other traditional middle-income jobs have also declined in number.
+
+In contrast, the metro economy has added jobs in lower-paying sectors. For example, from 2000 to 2019, metro Milwaukee added 13,000 jobs in the accommodation and food service workers sector, which includes servers, cooks, and food preparation workers. The average wage is $18,000 a year.
+
+The largest employer in the metro Milwaukee area today is the health care/social assistance sector.  That includes registered nurses, nursing assistants, and personal care aides.
+
+That sector accounts for nearly 19% of the region’s private-sector jobs. It’s also the fastest-growing sector. Since 2000, we’ve added 37,000 health care and social assistance jobs. They pay an average wage of $48,000, $19,000 less than the average manufacturing job. 
+
+The region is seeing exponential growth in one higher-paid sector of the economy: “management of companies and enterprises.” Think private equity and management firms.
+
+Those jobs, with an average wage of $115,000 a year, still amount to only 3.5% of metro Milwaukee’s private sector employment. But they have tripled in number in the last two decades, an additional 15,000 high-paying jobs for the area. Only five metros have added more jobs in this category. Collectively, these jobs bring home 7.4% of the Milwaukee metro’s wages, contributing to an increase in overall per capita earnings that doesn’t extend down the income ladder.
+
+There are other contributing factors to metro Milwaukee’s decline in median household income.  As we mentioned, the metro area shed 4,400 public sector jobs in the last decade. Those jobs typically pay middle-class wages.
+
+In addition, the population in the WOW counties is aging. The number of suburban households not participating in the labor market has increased from 19% in 1980 to 27% in 2018. 
+
+We estimate a fifth of suburban households are entirely composed of retirees over the age of 60, compared to just 13% in the city. These suburban retiree households have a median income of $35,000, so their growing share of the population is one of the sources of the decline in household incomes.
+
+The story of household income in metro Milwaukee bears some resemblance to other Midwestern cities, but not in a good way. In real dollars, Detroit and Cleveland have also seen their median household income decline since 1980, and by an even larger amount than Milwaukee.
+
+Some other Midwestern metros have fared better. Household income for metro Indianapolis is the same as it was in 1980. The Chicago, Kansas City, and St. Louis metro areas have seen a modest increase, while Madison and Minneapolis have seen significant gains.
+
+As we reported in June of this year, metro Milwaukee’s population has been in a slow or no-growth mode since 2000.  That is reflected in employment numbers. Despite two recessions in the 2000-2010 decade, the Minneapolis, Indianapolis, and Kansas City metro areas all added tens of thousands of employees to their economies from 2000 to 2019. The Minneapolis-St. Paul metro added 235,000. Indianapolis added 201,000. Both had such strong population and jobs growth that their metro areas physically expanded. Kansas City added 92,000 employees.
+
+In contrast, metro Milwaukee lost more than 6,200 employees during that period. That performance ranked Milwaukee 309th out of 352 metro areas, but it was still better than Detroit, which lost 152,000 employees, and Cleveland, which lost 87,000.
+
+Metro Milwaukee fared slightly better in the category of average pay increase. Since 2000, average pay has climbed $3,500, but that increase still put us in the bottom third among metro areas.
+
+A lot has changed in metro Milwaukee since 1980 when Ronald Reagan famously asked voters if they were better off than they were four years ago. But at least one of those changes has not been for the better; the prosperity of its people today is not what it was it was four decades ago. And that was before COVID-19.

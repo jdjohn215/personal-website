@@ -1,0 +1,125 @@
+---
+title: "The worst didn't come to pass for Milwaukee's economy during the pandemic. The recovery remains a work in progress."
+date: "June 30, 2022"
+author: "Mike Gousha and John Johnson"
+---
+
+In the darkest days of the coronavirus pandemic, uncertainty ruled the day for Wisconsin businesses and workers.  Even as vaccines were becoming widely available in the spring of last year, Wisconsin Economic Development Corp. Secretary Missy Hughes worried about the fate of the state’s many small businesses, especially those with fewer than 20 employees.
+
+“We’re potentially looking at losing 20 to 30 percent of these small businesses,” [she warned](https://www.youtube.com/watch?v=Xtcga-EPpkY) during a virtual event with Marquette University Law School in March of 2021.
+
+Today, it appears that worst-case scenario didn’t materialize. In a recent interview with us, Hughes cited several encouraging signs, including a 42% increase in new businesses formed during the pandemic.  [A torrent of state and federal aid](https://www.jsonline.com/story/money/business/2021/11/26/wisconsin-bounceback-grants-help-small-businesses-expand-across-state/8744474002/) — WEDC alone gave grants of $600 million to small businesses — combined with the grit and creativity of  owners and workers averted an economic catastrophe.  While the virus remains a concern, the greatest challenges facing most businesses right now are workforce shortages and inflation.
+
+## Milwaukee is on the mend, but with a ways to go
+
+Has the economy fully recovered, or have we settled into a kind of new normal?  More specifically, how is the economy of the state’s largest city and most populous county, Milwaukee, faring more than two years after the start of the pandemic? With two-thirds of the metropolitan area’s approximately 1.5 million residents living in Milwaukee County, its performance remains central to the region’s economic vitality.  
+
+New analysis done as part of the Milwaukee Area Project at Marquette University Law School’s Lubar Center shows an economy on the mend, but not yet fully recovered from the pandemic’s fallout.  Among our findings:
+
+* There does not appear to be a mass exodus from the labor force in the city of Milwaukee, but unemployment remains higher than it was before the pandemic.
+
+* Milwaukee County saw the number of business establishments actually increase from 2019 to 2021, but the number of employees across nearly all major sectors of the economy was down from two years ago.
+
+* Employment in some industries declined in 2020 but began to rebound in 2021. Others declined two years in a row, suggesting longer-lasting changes to the local economy.
+
+* Employment in some of the county’s best-paying sectors had not recovered to pre-pandemic levels by the end of 2021. That includes manufacturing and the professional and business service sectors.
+
+* As expected, the leisure and hospitality industry was hardest hit by the pandemic.  Employment declined by 31% from 2019 to 2020. The sector has recovered somewhat, but employment remains well below pre-pandemic levels.
+
+* While restaurant employment fell, the total number of restaurants in the city of Milwaukee grew in 2021, a phenomenon fueled by strong growth among caterers and food trucks.
+
+* Businesses, non-profits, local governments, and individuals in Milwaukee County benefited greatly from the federal government’s financial assistance during the pandemic. For example, the Paycheck Protection Program (PPP) sent $2.3 billion to employers across the county and $1.9 billion of that amount went to entities in Milwaukee.
+
+Let’s look at the employment picture first. 
+
+## Milwaukee unemployment rate is still relatively high
+
+Since the Great Recession, Wisconsin’s unemployment rate has consistently been slightly lower than the national rate.  But for decades, Milwaukee’s unemployment rate has been consistently higher than both the state’s and the nation’s.  Far from changing this basic dynamic, the economic recovery appears to have exacerbated the gap between Milwaukee and the rest.
+
+In May of 2019, prior to the pandemic, U.S. unemployment was 3.4%.  It was 3.1% in Wisconsin and 4.2% in Milwaukee.
+
+Unemployment spiked for all three in 2020, as the pandemic took hold and governments took steps to address a public health emergency. In April of 2020, unemployment stood at 14.4% nationally, 14.1% in Wisconsin, and 16.7% in Milwaukee.
+
+But by May of this year, the U.S. and Wisconsin unemployment rates had returned, or even improved on, pre-pandemic levels. Not so for Milwaukee. Its 4.9% unemployment rate was nearly a full percentage point higher than May of 2019. 
+
+To count as unemployed,  people must be looking for work.  People who have left the workforce entirely don’t factor into the unemployment rate. But our analysis does not suggest a mass exodus from the labor force. In fact, the city of Milwaukee’s labor force in May of this year was 273,000, slightly higher than in 2019. 
+
+The number of unemployed people in Milwaukee was estimated to be 13,300 in May of this year. That’s down from 20,000 in May of 2021, but still higher than any other year since 2016. 
+
+One striking finding of our analysis was that almost none of the sectors in the Milwaukee County economy had fully recovered from the pandemic. The best source for employment data by sector is the Bureau of Labor Statistics’ Quarterly Census of Employment and Wages. Because these reports have a six-month lag time, they do not capture the most recent changes in employment. But they do give us our best and most reliable sense of which parts of the local job market are growing and shrinking.  The numbers are only available on the county level, and we only discuss private-sector workers — leaving aside government employment.
+
+## Leisure hospitality workers hit hard
+
+Not surprisingly, the leisure and hospitality industry was hammered by the pandemic.  Employment fell from 48,000 to 33,000 in the first year of the pandemic.  As of December 2021, employment had only partially recovered to 42,000.  
+
+Restaurant employees were hit especially hard. In the first year of the pandemic, full-service restaurants shed 33% of their workforce, nearly 4,900 workers. By December of 2021, just under 2,600 had been added back.
+
+Likewise, food service contractors lost about half their jobs in 2020, with only about half of that recovered in 2021.
+
+Higher paying occupations also struggled to return to pre-pandemic levels. The manufacturing sector in Milwaukee County saw employment decline by 4,000 in 2020, the first year of the pandemic, and 2021 showed a modest recovery of 700 workers.
+
+In recent years, we have written about one of the bright spots in the Milwaukee economy, the growth of employment in the “management of companies and enterprises” sector in the last 20 years. New data suggests the pandemic may have interrupted or even halted that trend. During the first year of the pandemic, the number of employees in this industry fell by more than 1,000. The industry lost 400 more in 2021.  Since these are generally prestigious, desirable, high-paying jobs, it raises the possibility that some of these positions are leaving Milwaukee entirely.
+
+Other continued employment declines in 2021 may reflect a tight labor market for certain kinds of workers, not a lack of open positions. For instance, employment in nursing homes, assisted living facilities, and home health care all fell in both 2020 and 2021.
+
+As the pandemic forced Americans to change their shopping habits, employment in a few industries increased. The most dramatic example can be found in the general warehousing and storage industry. Employment has more than doubled since 2019, gaining over 2,500 jobs. The number of employees working in construction by the end of 2021 also grew, slightly exceeding its 2019 benchmark.
+
+## Number of business establishments is up
+
+Employment is one way to measure the recovery from the pandemic. Another is looking at the number of business establishments, or workplaces.  Perhaps counterintuitively, the number of establishments grew while employment fell.
+
+Sometimes, this reflects changes in where people worked. The federal Department of Health and Human Services used pandemic relief funding to encourage growth in home-based care for the elderly and disabled. Similarly, the number of child day care establishments grew even while employment in these places fell. Possibly, this reflects a growing preference for smaller providers.
+
+Other cases of substantial establishment growth were among professionals and skilled trades, often related to shipping or housing, including marketing consultants, real estate agents, truckers, home remodelers, insurance agents, landscapers, and drywall contractors.
+
+Starting a business during a pandemic takes a lot of planning, and a leap of faith.  But some entrepreneurs did just that in 2020 and 2021, even in the kinds of service sector industries most disrupted by the pandemic. With the help of the Milwaukee City Clerk’s office, we created a unique dataset by matching business license recipients for tavern, restaurant and grocery activities in the city.
+
+After a decline in 2020, most of those businesses showed a strong recovery in 2021. Compared to 2019, there were 6% more restaurants at the end of 2021.  That was driven by strong growth among caterers and mobile food trucks. These two categories grew 47% since the pandemic began.
+
+The ranks of large grocery stores were largely unaffected by the pandemic.
+
+A few gas stations closed in 2020, but their numbers recovered in 2021.
+
+Convenience stores recovered incompletely in 2021, but the data suggests their decline may predate the pandemic.
+
+Bars and coffeeshops  have struggled. The number of taverns — drinking establishments that don’t serve anything more complicated than frozen pizza — fell in both 2020 and 2021.
+
+Likewise, a half-dozen coffeeshops closed in 2020, with no recovery in 2021.
+
+## The impact of Upstart Kitchen, Sherman Phoenix
+
+Some parts of the city, including the 1st aldermanic district on the far north and 2nd aldermanic district on the northwest sides, saw significant declines in licensed bars, coffee shops and restaurants. These areas were also hard hit by the housing crisis of the Great Recession.
+
+With fewer people working in office towers and less street traffic, the 4th aldermanic district downtown also saw a decline in these kinds of licenses.
+
+In contrast, Milwaukee’s 14th district, home to the Bay View neighborhood, saw an increase in licenses for restaurants, coffee shops and grocery stores.
+
+Even more entrepreneurial activity occurred in Milwaukee’s 7th aldermanic district during the last two years. Located on the north side and including the Sherman Park neighborhood, the 7th added 31 new licenses, the vast majority for new restaurants.
+
+Digging a little deeper, the 7th saw an increase of at least 14 catering businesses and five mobile restaurant bases (the kitchen associated with one or more food trucks).
+
+Much of this burst of entrepreneurial activity can be attributed to Upstart Kitchen, a food business incubator which offers commercial kitchen space to new businesses. The shared space at 43rd and Fond du Lac is located less than a mile from the Sherman Phoenix development, which has been another source of small business growth in the 7th district.
+
+## Billions in federal dollars flow into the region
+
+As we wrote this piece, we couldn’t help but wonder about the local impact of federal assistance received during the pandemic, an impact that can now be measured in the billions of dollars. Here are numbers from a few of the biggest aid programs. To help give a sense of scale, total wages paid by all nonfarm employers in Milwaukee County added up to $26.9 billion in 2019, $26.7 billion in 2020, and $28.3 billion in 2021.
+
+Using census data to find the eligible population, we estimate that Milwaukee County residents received about $2.2 billion directly from the three pandemic-related stimulus checks. Expanded child tax credits in 2021 paid Milwaukee County families around $240 million in total.
+
+Our calculations suggest that the various temporary expansions of federal unemployment benefits added over $700 million to the checks of unemployed Milwaukee workers across the 1.6 million weekly claims made during the eligible months. Emergency rent relief in Milwaukee County totaled about $60 million through the first half of 2022.
+
+Other stimulus efforts supported the private sector. The largest was the Paycheck Protection Program, which allowed small businesses to apply for low-interest (often forgivable) loans that could be used to cover payroll costs, rent, interest, and utilities.
+
+Data from the Small Business Administration indicates the PPP paid out $2.3 billion to Milwaukee County businesses and non-profits, of which $1.9 billion went to the city of Milwaukee. $1.7 billion of the citywide loans have been forgiven.
+
+The majority of PPP loans made to Milwaukee businesses appears to have gone to individuals. Of the more than 25,000 loans made in Milwaukee, 55% went to either sole proprietorships, independent contractors, self-employed individuals, or single member LLCs. 
+
+Collectively, these recipients got $222 million in loans, of which $143 million has been forgiven to date.  This rate of loan forgiveness — 64% — is much less than the rates achieved by other kinds of borrowers.  For example, the forgiveness rate for corporations is 96%.
+
+Most of those corporations obtained their loans with the help of well-known banks. In contrast, thousands of the loans to individuals were processed through less well-known financial institutions located in places like California, Arizona, and Florida. Some of these loan originators have forgiveness rates as low as 49%.
+
+The role government played in responding to a deadly virus will be debated for some time.  What can be said is that the worst fears of top state officials were not realized.
+
+In Milwaukee County, two years after the pandemic began, most Milwaukee County businesses are still in business. In fact, there are more business establishments today than there were two years ago.
+
+But that masks the other story revealed by the data: At the start of this year, nearly every major sector of the local economy had fewer total employees than before the pandemic began. In Milwaukee County, at least, the recovery remains a work in progress.

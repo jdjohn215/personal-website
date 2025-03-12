@@ -1,0 +1,53 @@
+---
+title: "The 2023 Supreme Court Election in the Milwaukee Metro"
+author: "John Johnson"
+date: "April 5, 2023"
+---
+
+```{r, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+library(reactable)
+library(leaflet)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+```
+
+*The following analysis is based on unofficial election night returns.*
+
+The election results from the Milwaukee metro reveal the breadth of Janet Protasiewicz's landslide victory in the 2023 WI Supreme Court election. Liberal candidates (Protasiewicz and Everett) won the 4-county area by 2.6 points (51.3% of the two-party vote) during the February primary. Protasiewicz won the general election by 12.1 points in the 4 counties.
+
+In Milwaukee County, Protasiewicz increased the liberal share of the (two-party) vote from 68% in the primary to 73% in the general. In Ozaukee County, she improved from 44% in the primary to 48% in the general. In Waukesha County, she moved from 36% in the primary to 42% in the general. And in more-Republican Washington County she likewise improved from 29% in the primary to 34% in the general election.
+
+Protasiewicz improved her vote share in all but two of the metro's 94 municipalities. The graphs below show each municipality's primary and general election vote margins. (Vote totals are tabulated separately for the handful of municipalities that straddle county lines.)
+
+The liberal candidate flipped 9 municipalities which had given a majority of their vote to the conservative candidates in the primary. They are Greendale, Oak Creek, Port Washington, Cedarburg, Thiensville, Mequon, Hales Corners, Franklin, and Waukesha. Among these, the City of Waukesha saw the largest shift. It gave liberal candidates 41% of the vote in February, while Protasiewicz won just over 50% in April.
+
+:::{.column-page}
+![](graphics/scowis-primary-vs-general.png)
+:::
+
+Election results are reported in combinations of wards called “reporting units” for many of the smaller municipalities in Wisconsin. The following maps show the SCOWIS results in those units. The last map shows the shift in reporting units between the primary and the general election for those places where a direct comparison was possible.
+
+Among municipalities where at least 1,000 votes were cast, the largest shifts came in the Town of Brookfield (+10 points toward Protasiewicz), the City of Waukesha (+9), West Allis (+8), and the Village of Germantown (+8).
+
+```{r}
+#| column: page
+#| layout-ncol: 3
+knitr::include_graphics("graphics/scowis-LibConMargin.png")
+knitr::include_graphics("graphics/scowis-LibConWinner.png")
+knitr::include_graphics("graphics/scowis-MarginShift.png")
+```
+
+Besides the Supreme Court race, the special election to fill the 8th Senate District also drew much attention. This traditionally Republican seat mainly covers a set of northern suburbs which [have trended](https://twitter.com/PollsAndVotes/status/1643461396808585221) toward the Democrats in recent years. Protasiewicz actually carried a narrow majority of this district, but the Democratic candidate, Jodi Habush Sinykin, fell just short. Protasiewicz received 38,470 votes, equal to 50.7% of the total in that race. Habush Sinykin won 37,208, or 49.1%.
+
+--------------------------------------
+
+The table below shows Supreme Court results for each municipality (within counties).
+
+```{r}
+readRDS("post-assets/scowis-reactable.rds")
+```
+
+Use the map below to explore specific results in each reporting unit.
+
+```{r}
+readRDS("post-assets/scowis-leaflet.rds")
+```

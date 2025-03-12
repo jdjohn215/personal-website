@@ -1,0 +1,24 @@
+/* css styles */
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  color: gray;        /* Makes the text gray */
+  font-weight: bold;  /* Makes the text bold */
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.text-divider::before {
+  margin-right: 0.5em;
+}
+
+.text-divider::after {
+  margin-left: 0.5em;
+}

@@ -1,0 +1,173 @@
+---
+title: "Table of Contents"
+page-layout: full
+---
+
+Links are arranged thematically by reverse chronological order.
+
+::: {.grid}
+
+::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
+
+## Miscellaneous 
+
+<div class="text-divider">2025</div>
+
+[An appreciation of walking to the polls](posts/2024/milwaukee-walking-to-the-polls.html)
+
+[The Most Common Domesticated Animal in Every County](posts/2024/most-common-animal.html)
+
+<div class="text-divider">2024</div>
+
+[Gunfire Trends in Milwaukee, 2017-2023](posts/2023/milwaukee-gunfire.html)
+
+<div class="text-divider">2023</div>
+
+[Grid-less Milwaukee](posts/2022/gridless-milwaukee.html)
+
+<div class="text-divider">2022</div>
+
+[Segregation and Diversity Across American Metros](posts/2021/metro-diversity-and-segregation.html)
+
+[A map of Wisconsin Land Type Associations](posts/2021/wisc-land-type-associations.html)
+
+<div class="text-divider">2021</div>
+
+[Mapping the Urban-Rural Continuum](posts/2020/modified-ruca-codes.html)
+
+[America's Largest Trees](posts/2020/champion-trees.html)
+
+[Maps of Average Rainfall in Hydrological Basins](posts/2020/average-rainfall-huc8.html)
+
+<div class="text-divider">2020</div>
+
+[A State of Water](posts/older/state-of-water.html)
+
+[1 Year of Snow Depths](posts/older/snow-depths.html)
+
+
+:::
+
+::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
+
+## Politics
+
+[Perceptions of Donald Trump a month into his second term](posts/2025/trump-perceptions-february.html)
+
+[Get ready for 6 years of Supreme Court races](posts/2025/scowis-preview.html)
+
+[How Much of the Republican Assembly Victory was Thanks to Incumbency?](posts/2025/assembly-incumbency-advantage.html)
+
+<div class="text-divider">2025</div>
+
+[What do voters and non-voters really think about Donald Trump? (Dec 2024)](posts/2024/trump-views-december.html)
+
+[How Donald Trump is Changing the Map in Milwaukee County](posts/2024/milwaukee-county-potus-trends.html)
+
+[Donald Trump won 50 Wisconsin Assembly Seats. So Did Tammy Baldwin.](posts/2024/president-and-senate-results-in-wi-legis-districts.html)
+
+[Voter Turnout Bucked the National Trend in Wisconsin](posts/2024/wisconsin-voter-turnout.html)
+
+[A closer look at the August partisan primary in the Milwaukee metro](posts/2024/aug13-primary.html)
+
+[The 2024 Wisconsin Assembly Races are the Most Contested in a Decade](posts/2024/contested-assembly.html)
+
+<div class="text-divider">2024</div>
+
+[The 2023 Supreme Court Election in the Milwaukee Metro](posts/2023/scowis-milw-metro.html)
+
+[Milwaukee Turnout Trends](posts/2023/mke-turnout-trends.html)
+
+[The balance of power in Wisconsin's Assembly under alternative maps](posts/2023/modeled-assembly-scenarios-2022.html)
+
+<div class="text-divider">2023</div>
+
+[Wisconsin Redistricting Plans 2022](posts/2022/redistricting-plans-2022.html)
+
+[Barrett's Electoral History](posts/2022/barrett-electoral-history.html)
+
+<div class="text-divider">2022</div>
+
+<div class="text-divider">2021</div>
+
+[Analysis of Milwaukee County's Spring 2020 Election](posts/2020/milw-cnty-april-election.html)
+
+<div class="text-divider">2020</div>
+
+[Wisconsin 2016 Presidential Election Dot Map](posts/older/potus-2016-dot-map.html)
+
+:::
+  
+::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
+
+## Housing
+
+<div class="text-divider">2025</div>
+
+[The changing cost of buying vs renting](posts/2024/rent-vs-buy.html)
+
+[Homes in metro Milwaukee have long been considered affordable. Is that still true?](posts/2024/milwaukee-cost-of-housing.html)
+
+<div class="text-divider">2024</div>
+
+[The Rise and Impact of Corporate Landlords](https://law.marquette.edu/assets/marquette-lawyers/pdf/marquette-lawyer/2023-summer/2023-summer-p48.pdf)
+
+<div class="text-divider">2023</div>
+
+[In the competition for Milwaukee's neighborhoods, out-of-state landlords remain a concern](posts/2022/milwaukee-homebuyers-and-landlords.html)
+
+<div class="text-divider">2022</div>
+
+['A grasp on stable shelter:' As the pandemic recedes, housing instability remains a big problem in Milwaukee](posts/2021/milwaukee-evictions.html)
+
+[Growing 'land grab' by out-of-state investment landlords raises questions for Milwaukee homeowners and neighborhoods](posts/2021/milwaukee-out-of-state-landlords.html)
+
+<div class="text-divider">2021</div>
+
+[It's an Unsettling Day in the Neighborhoods](https://law.marquette.edu/assets/marquette-lawyers/pdf/marquette-lawyer/2020-summer/2020-summer-p42.pdf)
+
+[Thousands of Milwaukee homes are no longer owned by city residents in a massive transfer of wealth since the Great Recession](posts/2020/milwaukee-owner-occupancy.html)
+
+<div class="text-divider">2020</div>
+
+:::
+
+::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
+
+## Demographics etc.
+
+<div class="text-divider">2025</div>
+
+[How zoning reform could reverse population loss in many Milwaukee neighborhoods](posts/2024/zoning-and-population-loss.html)
+
+[How population is changing in Wisconsin and the Upper Midwest since the pandemic](posts/2024/midwestern-pop-trends.html)
+
+[Recent birth counts point to rapidly shrinking school enrollment in Milwaukee](posts/2024/births-and-first-graders.html)
+
+[Marriage and birth rates, household size, all drop sharply in Milwaukee over 50 years](posts/2024/milwaukee-household-types.html)
+
+<div class="text-divider">2024</div>
+
+[Milwaukee is shrinking. Nashville and Minneapolis growing. Immigrants help them thrive.](posts/2023/milwaukee-immigration.html)
+
+[What's the path for Milwaukee to reverse population loss?](posts/2023/how-could-milwaukee-grow.html)
+
+<div class="text-divider">2023</div>
+
+[The worst didn't come to pass for Milwaukee's economy during the pandemic. The recovery remains a work in progress.](posts/2022/milwaukee-covid-economic-recovery.html)
+
+<div class="text-divider">2022</div>
+
+[Census shows the Milwaukee area is more diverse, but overall growth remains sluggish](posts/2021/milwaukee-census.html)
+
+<div class="text-divider">2021</div>
+
+[By one key measure, household income, metro Milwaukee is worse off than it was in 1980](posts/2020/milwaukee-household-income.html)
+
+[Milwaukee lagging its Midwestern peers in a key metric of economic vitality: population growth](posts/2020/milwaukee-population-trajectory.html)
+
+<div class="text-divider">2020</div>
+
+:::
+  
+:::  

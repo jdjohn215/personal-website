@@ -1,0 +1,147 @@
+---
+title: "A grasp on stable shelter: As the pandemic recedes, housing instability remains a big problem in Milwaukee"
+author: "Mike Gousha and John Johnson"
+date: "July 8, 2021"
+---
+
+*This article [originally appeared](https://www.jsonline.com/story/news/solutions/2021/07/08/pandemic-wanes-housing-insecurity-remains-big-problem-milwaukee/7877015002/) in the Milwaukee Journal Sentinel on July 8, 2021.*
+
+“Without stable shelter, everything else falls apart.”
+
+Those words, written by sociologist Matthew Desmond in his Pulitzer Prize-winning book "Evicted: Poverty and Profit in the American City," helped ignite a national conversation about the relationship between housing insecurity and poverty.
+
+Based on Desmond’s research and experience in the city of Milwaukee, "Evicted" was published in 2016. So, he began his national book tour here, with an appearance at Marquette University Law School.
+
+What Desmond, then at Harvard and now director of Princeton University’s Eviction Lab, told his audience on that late winter day was alarming.
+More: A surge in evictions is almost certain to happen when the moratorium ends. But the truth is they've been happening all along.
+More: A CDC moratorium on evictions ends July 31. Here is what is likely to happen next.
+
+In poorer, Black neighborhoods in Milwaukee, one in 13 renters was evicted annually.
+
+One in eight of all renters in the city experienced some kind of involuntary move every two years.
+
+One in five Black women renters reported being evicted at some point in her life.
+
+Desmond said his findings and subsequent research had led him to a simple conclusion.
+
+“I’m convinced we can’t fix poverty in this country if we don’t address housing.”
+
+Five years and one pandemic later, housing insecurity or the lack of stable shelter, remains a significant issue for Milwaukee and other American cities. Eviction filings and orders have slowed because of eviction moratoriums and rental assistance programs created during the COVID-19 pandemic.  
+
+What happens when the moratoriums end? We don’t know yet. But we do know what happened in the years leading up to the pandemic. Research conducted by Marquette University Law School’s Lubar Center for Public Policy and Civic Education adds new insights into eviction in Milwaukee.
+
+Among our findings:
+
+* Eviction filings in Milwaukee are both simultaneously rare and common. They happen all the time to some people in some places, and not at all to other people in other places.
+
+* The number of eviction filings a housing unit receives depends more on who the landlord is than how poor a neighborhood’s renters are.
+
+* Large landlords and out-of-state landlords file for eviction at significantly higher rates than small landlords, especially ones who rent in the same neighborhood where they live.
+
+* A small number of rental properties — this includes anything from single-family homes to apartment complexes — are responsible for the vast majority of eviction filings.
+
+* Some renters are the targets of multiple eviction filings, a practice referred to as “serial eviction filings.”
+
+As part of the Lubar Center’s Milwaukee Area Project, we collected and analyzed data from 2016 through 2020 but focused largely on the four years before the pandemic.               
+
+This analysis uses a unique, linked dataset of Milwaukee County court eviction and property records built and maintained by Branden DuPont at the Medical College of Wisconsin. We examined property data from the city assessor’s office and identified the owners of parcels or rental properties in the city. Because some landlords use multiple legal entities, we connected related ownership based on shared business addresses, corporate filings with the Wisconsin Department of Financial Institutions, company webpages and newspaper stories.
+
+We looked at both eviction filings — the legal threat of eviction — and actual court-ordered evictions. For this story, we emphasize filings over orders because previous academic research shows many filings result in a tenant leaving a unit before a court date.
+
+We do not attempt to account for informal evictions, which Desmond says are common. They might include paying a tenant to move out of a property, forced moves resulting from landlord foreclosures or building condemnations.
+
+Here’s what we learned:
+
+Before the COVID-19 pandemic, formal evictions occurred at a stable pace across the city of Milwaukee.  About 12,000 evictions were filed each year from 2016 through 2019. Over this period, the number of filings resulting in court-ordered evictions declined each year, from a high of approximately 5,700 in 2016 to a low of about 5,000 in 2019.
+
+The pandemic greatly disrupted the eviction process. Total filings declined 35% in 2020 compared with 2019.  Court-ordered evictions declined even more, 64%.  From the beginning of the Centers for Disease Control and Prevention's limited eviction moratorium in September 2020 through mid-June 2021, filings declined by 48% compared with the average of previous years.
+
+In the years immediately preceding the health crisis, eviction was extremely rare in some parts of the city, such as Bay View and the lower east side. Those neighborhoods are largely white and generally prosperous.
+
+For example, from 2016 through 2019, there was an average of 102 eviction filings a year on the lower east side, which has the most rental units in the city. That would mean a yearly average of 14 eviction filings per 1,000 units, and just six court-ordered evictions per 1,000 units.
+
+Milwaukee’s Third Ward fared even better. In the same four-year period, the neighborhood known for high-end apartments and luxury condominiums had exactly four eviction filings and just one eviction order.
+
+It was a far different story in other parts of the city. We found much higher rates of eviction filings in census tracts where the median rental household has an income less than $40,000, where more than 30% of that income is spent on rent, and where fewer than 25% of renters are white.
+
+## The size of a landlord's business matters
+
+While eviction can be a complicated matter, at its core is a simple reality: Evictions are usually filed when a tenant doesn’t pay rent in a timely manner. But in poorer neighborhoods, eviction rates don’t neatly correspond with neighborhood measures of tenant poverty and housing cost burden.
+
+Eviction filings were common in the northwest side’s Silver Spring neighborhood, which straddles its namesake thoroughfare between North 60th Street and West Fond Du Lac Avenue. The neighborhood saw an average of 204 eviction filings per 1,000 rental units, an eviction filing for roughly one out of five rental units each year.  There was an average of 84 court-ordered evictions per 1,000 units.  Among Milwaukee’s approximately 180 neighborhoods, Silver Spring ranks ninth in eviction filings.
+
+At first glance, that was something of a surprise. Although Silver Spring has its struggles, it’s far from the poorest neighborhood in Milwaukee.
+
+Seventy-one neighborhoods have a higher percentage of tenants living in poverty. Forty-seven neighborhoods are home to a median renter with a lower household income, and the typical tenant in 60 neighborhoods has a higher housing cost burden. In other words, there are many neighborhoods where tenants tend to be poorer and rents more burdensome. But there aren’t many neighborhoods with more eviction filings.
+
+What made Silver Spring’s experience different is that a significant share of its properties was owned by a set of landlords with high eviction rates.
+
+From 2016 through 2019, the Berrada Group, Anchor Properties Group and George Sessler Group collectively owned about 15% of the neighborhood’s rental housing, while accounting for 40% of its eviction filings and 39% of its court-ordered evictions. Without the properties owned by these landlords, Silver Spring’s filing rate would fall by about 29%.
+
+Berrada’s rental business has been the subject of past Milwaukee Journal Sentinel reporting.  In a story a year ago, a representative of the company said eviction actions were “often required to get the attention of tenants who are behind in their lease payments. The eviction may be the only way to persuade a tenant to engage in discussions toward an acceptable payment plan.”
+
+It’s important to note that the Berrada Group essentially halted evictions a short time later, before the CDC moratorium took effect in the late summer of 2020. We’ll discuss that more later.
+
+This example illustrates an important finding in our research. When it comes to eviction, landlords vary in behavior, even when they own similar portfolios.
+
+We used a statistical model to distinguish between different factors affecting eviction rates. Not surprisingly, we found that some demographic and property characteristics did predict higher eviction rates, but their influence paled in comparison to the effect of certain landlord traits, especially size.
+
+Consider a common housing situation in Milwaukee — a duplex owned by a smaller, Wisconsin-based landlord who owns 15 or fewer units. The house is the average age, size and value for rentals in Milwaukee, and the neighborhood’s tenants have average demographic characteristics. Our model predicted properties like this would have an eviction filing rate of 18 filings per 1,000 rental units each year.
+
+If the landlord were based somewhere outside Wisconsin, we’d expect a filing rate of 29 per 1,000.
+
+Bigger landlords file at much higher eviction rates. Large institutional investors with private equity backing have recently entered Milwaukee’s rental market. If one of these companies owned the duplex, our model predicted a filing rate of 131 per 1,000 units.
+
+If the property were owned by a very large landlord (one who owns 100 or more units), the annual filing rate jumped to 159 per 1,000 rental units, an increase of 783% over the smaller, Wisconsin-based landlord.
+
+We also looked at the behavior of neighborhood landlords, who we defined as individuals (not LLCs) who owned fewer than five properties, all within a half-mile of their own home. If one of these landlords owned the duplex, our model predicted a rate of just six filings per 1,000 rental units. That’s a two-thirds decline compared with the small owner who isn’t a neighborhood landlord.
+
+Other variables matter, too. If the small, Wisconsin landlord owned that duplex in a neighborhood where 80% of renters were Black, we’d expect a filing rate of 24 per 1,000. If just 20% of renters were Black, the predicted rate falls to 14. Likewise, if half of neighborhood tenants have a child, the model predicted a rate of 27 filings per 1,000, but only 12 if just 10% of renting households include a child.
+
+In another illustration of systemic inequities, being poor, Black and living with kids makes a renter more susceptible to eviction. But our research is clear and consistent with other recent work from cities like Atlanta and Boston. The frequency of eviction filings depends more on the landlord than the tenant.
+
+In fact, we found a relatively small number of property owners accounted for a disproportionate share of the filings from 2016 through 2019. For example, two landlords that combined own about 2.7% of the city’s rental housing stock were responsible for 17% of eviction filings and 15% of court-ordered evictions
+
+We identified the Berrada property group from a list of several dozen LLCs listed at addresses connected to Youssef Berrada or Berrada Properties Management. Collectively, these companies were the city’s largest landlord, although they only owned about 2.3% of the city’s rental housing stock between 2016 and 2019.  Still, Berrada accounted for 12% of all eviction filings and 10.5% of eviction orders.
+
+We identified the Anchor Properties Group from a list of over a dozen LLCs connected to Anchor Properties’ address on Milwaukee’s northwest side.  All the company names start with the letter “A,” including Anchor Properties LLC, Abuncha Properties LLC, Allsortsa Properties LLC, and Atunnu Properties LLC.  The Anchor Properties Group filed the second most evictions during that same time. It owned 0.5% of the total housing stock but accounted for 5% of eviction filings and 4.5% of eviction orders.
+
+Just as a small number of owners filed an unusually high share of evictions, we found evictions to be highly concentrated in a small number of properties. Ten percent of rented parcels or properties are responsible for 75% of eviction filings. Just 8% of rented parcels account for 75% of eviction orders.
+
+More than one in six evictions were filed in just 100 parcels, a statistic almost identical to Cleveland, Ohio, according to a study recently published by Desmond and Devin Q. Rutan.
+
+Because evictions are so concentrated among specific properties and landlords, targeted interventions can have a big impact.  After the initial eviction moratoriums expired in the summer of 2020, Berrada’s companies accounted for about a fifth of the city’s eviction filings in June and July — close to 500 in total. After negotiations with Legal Aid Milwaukee, the Berrada Group announced an eviction “hiatus.”  The group filed fewer than 10 evictions during the CDC moratorium (through mid-June 2021).  In contrast, the Anchor Properties Group filed around 390.
+
+No one knows what will happen when the CDC moratorium expires on Aug. 1, but if the Berrada Group and its community partners continue to find alternatives to evictions it would significantly reduce housing insecurity in Milwaukee.
+
+## 'Serial eviction filing' isn't just about eviction
+
+Finally, we also found evidence of a phenomenon that has been known as “serial eviction filing.”  In simple terms, we found repeated eviction filings against the same name at the same address.
+
+As a legal process, eviction is designed to let property owners reclaim their properties when a contract is broken.
+
+But the practice of serial filing suggests entering eviction court may have other purposes. In a 2020 study, co-authors Desmond, Lillian Leung and Peter Hepburn described it this way:
+
+“Property owners may rely on the threat of eviction to collect rent and discipline tenants. This strategy may also allow property owners to profit from late payments. Tenants threatened with eviction not only must pay their rent in full; they are also charged late fines and legal fees, including costs associated with attorneys and court filings.”
+
+That same study also notes that, counterintuitively, filing an eviction can also be a strategy for retaining tenants.
+
+“That incentive grows each time a property owner files for eviction as each filing generates a court record that can limit tenants’ future housing options,” the study’s authors note.  “In screening prospective tenants, property owners tend to view recent eviction records as disqualifying …”
+
+We looked at the year 2018 in Milwaukee for evidence of what we refer to as "serial eviction chains." That means a series of evictions filed against the same person at the same property while that property was owned by the same landlord. Of the 12,000 evictions filed in the city of Milwaukee, 40% were part of a serial eviction chain.
+
+Forty-nine percent of the chains ended in an eviction order, while 51% ended with an eviction filing that did not result in a court-ordered eviction.
+
+Data analysis shows that serial eviction filings were used frequently by some landlords, including the city’s two leading eviction-filing private landlords, Berrada and Anchor Properties.  Thirty-five percent of Berrada’s eviction filings were part of a chain of at least three filings. For Anchor, that number was even higher, 43%.
+
+Our research found one Berrada renter has received more serial eviction filings than anyone else in Milwaukee during that five-year period, a total of 18, the most recent of which was filed last summer during the pandemic.
+
+## 'A grasp on stable shelter'
+
+In the five years since Matthew Desmond visited Marquette University Law School, the city has seen several notable changes in its housing market, some of which we’ve written about in this newspaper.
+
+Downtown apartment construction is booming, but there’s also a new emphasis on affordable housing in the city. There continues to be an exodus of city employees to the suburbs now that the residency requirement has ended.  Owner-occupancy of single-family homes in Milwaukee finally stabilized last year after a decade of decline. The number of rental properties owned by city residents has fallen, with more properties owned by landlords who live in the suburbs or out of state.
+
+How the pandemic will affect any or all of these trends is unclear.  But Desmond’s words from his 2016 visit to Milwaukee still ring true:
+
+“This country affords us freedoms, freedom to better ourselves, to better our kids, improve our communities.  But those freedoms are massively compromised if we don’t have a grasp on stable shelter.”

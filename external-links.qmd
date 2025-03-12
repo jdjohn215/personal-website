@@ -1,0 +1,19 @@
+---
+title: "External Links"
+---
+
+Here are some projects on other websites.
+
+* [Milwaukee Property Ownership Network](https://www.mkepropertyownership.com/)
+  * look up any landlord in Milwaukee and see related LLCs, eviction filing rates, and code violations
+  * [Companion website](https://jdjohn215.github.io/mkepropertynetworks-summary/) with summary statistics and visualizations
+
+* [WebBook of Wisconsin Election Results](https://mulawpoll.org/)
+  * see tables and visualizations showing county and municipality election results from 2002 onwards
+
+* [Wisconsin Elections Archive](https://github.com/jdjohn215/wisc-elections-archive)
+  * integrated election results at the reporting unit, municipality, and county levels
+  * matched to unique Census geography codes
+
+* [Blue Book Newsletter](https://bluebookmke.substack.com/)
+  * subscribe to receive occasional posts in your inbox

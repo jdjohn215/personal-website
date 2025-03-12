@@ -1,0 +1,260 @@
+---
+title: "Milwaukee Turnout Trends"
+author: "John Johnson"
+date: "March 9, 2023"
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+```
+
+Was Milwaukee's 2022 election turnout low or high? You can spin a story either way, depending on the baseline you choose.
+
+Turnout (as a share of adults) hit modern highs in 2012 and 2018. Since then, it has fallen, and the gap between city and state turnout has expanded to its largest point. Still, Milwaukee's 2022 turnout remained higher than any other race for governor from 1974 through 2006.
+
+Over the past decade, turnout dropped sharply in Milwaukee's majority black neighborhoods, but it fell from remarkably high levels during the Obama years.
+
+The sky-high turnout in majority Black wards during the Obama administration also extended to midterm elections--not just when Obama himself was on the ballot. This bump in turnout may have been thanks to renewed enthusiasm for the Democratic party, a strong get-out-the-vote operation, or something else, but it clearly extended beyond just support for the man himself. Whatever the cause, it appears to be over now, as turnout in majority Black wards has dropped relative to the rest of the city in each of the last 2 presidential and gubernatorial elections.
+
+# the long run
+
+The charts below show turnout statistics in every November election since 1972--the first election in which 18 year-olds could vote. In 2022, about 41% of adults in Milwaukee cast a ballot. That's down from 50% in 2018, 48% in 2014, and 43% in 2010. On the other hand, that 41% turnout figure is higher than *every other midterm election since 1974.*
+
+In 1974, just 27% of adults cast a ballot in the race for Wisconsin governor. That rose to around 40% in gubernatorial elections from 1978-1986, then fell to the low-to-mid 30s during from 1990-2002. After 2002, turnout grew in each of the next 4 midterms, before dropping again in 2022.
+
+Turnout has been more stable in presidential elections. Apart from 1996, which had unusually low turnout (just 49% of adults), turnout in presidential years has bounced around between the mid-50s to mid-60s. Turnout was particularly high from 2004-2012, reaching a modern high in 2012 when 2/3rds of adults voted. By comparison, turnout in 2016 and 2020 (both 57%) was much lower and more similar to voter participation levels in 1972 (54%) and 2000 (58%).
+
+:::{.column-page}
+
+![](graphics/mke-turnout-longrun.png)
+
+:::
+
+## turnout compared to Wisconsin
+
+Here is how Milwaukee's turnout compares to the state's over the past 50 years. With the exception of the 1984 presidential election, a smaller proportion of adults have voted in Milwaukee than the state overall. (Part of this may be due to Milwaukee having a greater share of adults who are ineligible to vote. Please see the appendix for a more detailed discussion.)
+
+The gap between city and state turnout varies quite a bit from one election to another. It generally shrank during the years Obama was in the White House. In 2012, Milwaukee turnout was just 3 percentage points lower than state turnout. The gap grew to 10 points in 2016 and 17 points in 2020.
+
+Similarily, the turnout gap in midterm elections was 7 points in 2014, growing to 10 points in 2018 and 16 points in 2022.
+
+The 2020 and 2022 elections had the largest turnout gaps between Milwaukee and Wisconsin since the franchise was extended to 18 year-olds.
+
+:::{.column-page}
+
+![](graphics/mke-vs-wi-turnout.png)
+
+:::
+
+# recent trends
+
+Milwaukee's high water mark for voter participation came in 2012. Registered voters numbered 337,000, or 78% of the total adult population. 289,000 people cast a ballot, equivalent to 86% of registrants and 67% of adults.
+
+The fraction of adults registered grew to 81% in 2016, but ballots cast fell to 247,000 in that year, a 10 percentage point drop in adult participation. The registered voter rolls shrank to 76% of adults in 2020, while the number of ballots cast was practically identical to 2016. This means that voter turnout increased by 6 points as a share of of *registered voters*, but it was nearly unchanged as a share of *adults*.
+
+Just 68% of adults were registered to vote after the 2022 gubernatorial election, lower than 72% after the 2018 race and 77% in 2014. Turnout in 2022 was similar to 2014 as a share of registered voters, but it was much lower as a share of all adults.
+
+```{r}
+structure(list(year = c(2012, 2014, 2016, 2018, 2020, 2022), 
+    vap = c(433348, 433201, 433045, 432898, 432760, 432622), 
+    rv = c(337046, 332072, 350730, 312052, 327770, 292044), rv_adults = c(77.7772136943057, 
+    76.6554093827115, 80.9915828609036, 72.0844171144242, 75.7394398742952, 
+    67.5055822403854), late_registrants = c(7050, 4399, NA, 4482, 
+    8462, 3282), election_day_registrants = c(53884, 41279, 44376, 
+    39842, 21084, 23700), total_voters = c(289232, 208415, 247090, 
+    216553, 247785, 179453), rv_turnout = c(85.8138058306581, 
+    62.7619913753644, 70.4502038605195, 69.3964467460551, 75.5972175610947, 
+    61.4472476750079), vap_turnout = c(66.7435871401276, 48.1104614255276, 
+    57.0587352353682, 50.0240241350156, 57.2569091413254, 41.4803223137057
+    )), row.names = c(NA, -6L), class = c("tbl_df", "tbl", "data.frame"
+)) %>%
+  gt(rowname_col = "year") %>%
+  fmt_number(columns = c(3,5:7), decimals = 0) %>%
+  fmt_number(columns = 2, decimals = 1, suffixing = T) %>%
+  fmt_percent(columns = c(4,8:9), decimals = 0, scale_values = F) %>%
+  tab_spanner("Registered voters",
+              columns = c(rv, rv_adults)) %>%
+  tab_spanner("Registration timing",
+              columns = c(late_registrants, election_day_registrants)) %>%
+  tab_spanner("Turnout as a share of",
+              columns = contains("turnout")) %>%
+  cols_label(
+    rv = "count",
+    rv_adults = "of adults",
+    vap = "adults",
+    total_voters = "voted",
+    late_registrants = "last 20 days",
+    election_day_registrants = "on e-day",
+    rv_turnout = "reg. voters",
+    vap_turnout = "adults"
+  ) %>%
+  sub_missing() %>%
+  tab_stubhead("November election year") %>%
+  tab_header(title = "Turnout and registration statistics",
+             subtitle = "City of Milwaukee, during general election years") %>%
+  tab_footnote("linearly interpolated using 2010 and 2020 decennial census data",
+               cells_column_labels("vap")) %>%
+  tab_footnote("registered voters as of the December following the election",
+               cells_column_spanners("Registered voters")) %>%
+  tab_footnote("includes those who registered at the polls while voting early in person",
+               cells_column_labels("late_registrants")) %>%
+  tab_style(style = cell_text(color = "#006600", weight = "normal"),
+            locations = list(cells_stub(rows = c(2,4,6)), cells_body(rows = c(2,4,6)))) %>%
+  tab_style(style = cell_text(color = "#000000", weight = "normal"),
+            locations = list(cells_stub(rows = c(1,3,5)), cells_body(rows = c(1,3,5)))) %>%
+  tab_source_note("Data sources: US Census Bureau, Wisconsin Election Commission. Calculations by John D. Johnson (@jdjmke)") %>%
+  tab_options(table.width = 700)
+```
+
+Wisconsin gives voters the chance to register at the polls on election day. In 2012, nearly 54,000 registered this way. That fell to 44,000 in 2016, and 21,000 in 2020. Registration in the 20 days prior to the election changed little over this period.
+
+The same pattern affected midterm elections. 41,000 people registered on election day in 2014, compared with 40,000 in 2018, and 24,000 in 2022.
+
+## turnout by ward
+
+### presidential years
+
+These maps show turnout as a share of adults in each City of Milwaukee ward. Keep in mind that ineligible adults are more likely to live in some parts of the city. For example, many non-citizen immigrants live on the near south side.
+
+Turnout fell basically everywhere in the city from 2012 to 2016, but by far the greatest drops occurred on the north side, where most wards experienced a voter turnout decline of 15 percentage points or more. 
+
+Changes were less dramatic between 2016 and 2020, but the declines continued across most of the north side. Turnout was about flat on the near south side. It slightly increased in neighborhoods along the lake and along the city's western and southern fringes.
+
+Taking a longer view, fewer adults voted in 2020 than 2012 in almost every part of the city. The exceptions are mainly a small set of wealthier wards in neighborhoods near the lake.
+
+::: {.panel-tabset}
+
+#### adult turnout
+
+![](graphics/mke-turnout-vap.png)
+
+#### turnout change
+
+![](graphics/mke-turnout-change-vap.png)
+
+:::
+
+### midterm years
+
+Overall midterm voter turnout peaked in 2018, but within the city patterns diverged.
+
+Turnout actually declined across most of the north side of Milwaukee from 2014 to 2018, while growing most strongly in the wealthier neighborhoods along the lake. Turnout also increased, albeit more modestly, across the near south side and the city's western and southern fringes.
+
+The shift from 2018 to 2022 was more uniform, as turnout fell in practically every neighborhood. That said, turnout drops were still generally steepest on the north side.
+
+Compared to 2014, turnout among adults in 2022 was dramatically lower on the north side, slightly lower on the south side, and noticeably higher in the neighborhoods hugging the lake all the way from Bay View to the Upper East Side.
+
+::: {.panel-tabset}
+
+#### adult turnout
+
+![](graphics/midterm-vap-turnout.png)
+
+#### turnout change
+
+![](graphics/midterm-vap-turnout-change.png)
+
+#### % adults registered
+
+![](graphics/midterm-adults-registered.png)
+
+#### % adults reg. change
+
+![](graphics/midterm-adults-registered-change.png)
+
+:::
+
+## turnout by race
+
+Any reader familiar with Milwaukee will have intuited the racial implications of the turnout maps above. Voter turnout plummetted on the majority Black north side beginning in the late 2010s.
+
+In 2004 and 2008, voter turnout was similar between majority Black and white wards. Then, in 2012, an astonishing 77% of adults cast a ballot in Milwaukee's majority Black wards. By comparison, just 70% of adults voted statewide. Turnout was 68% in majority white wards and 46% in majority Latino wards.
+
+Turnout dropped for all groups between 2012 and 2016, but it fell three times faster in majority Black wards than majority white wards. Then, from 2016 to 2020, turnout grew slightly in majority white and Latino wards, but it fell slightly in majority Black neighborhoods.
+
+Midterm elections followed a somewhat different pattern. Turnout in 2002 was quite low for all groups--20% in majority Latino wards, 31% in Black, and 39% in white wards. Rates of turnout grew over the next several elections. In 2014, 56% of adults voted in majority Black wards, followed by 50% in majority white wards and 29% in Latino ones.
+
+From 2014 to 2018, turnout grew in white and Latino majority wards, while falling in majority Black ones. Turnout fell for all groups in the 2022 election, but the pace of the drop was much faster in majority Black wards.
+
+Although 2022 turnout in majority Black wards was much lower than the past 3 gubernatorial elections, it remained higher than in 2002 and 2004.
+
+![](graphics/mke-turnout-by-race.png)
+
+## votes by mode
+
+Along with changes in total turnout, the last several elections have seen significant changes in the ways voters cast their ballots. Voting by mail has grown in popularity, while voting on election day has declined.
+
+The pandemic made voting in 2020 particularly unusual, but the comparison between the 2018 and 2022 midterms probably points to more enduring shifts. In 2018, 5% of voters voted by mail. That jumped to 18% in 2022. The proportion of voters casting a ballot in person at an early voting location stayed flat. Same-day registration fell from 18% of voters to 13%. Total election day voting fell from 78% in 2018 to 66% in 2022.
+
+```{r}
+structure(list(year = c(2012, 2014, 2016, 2018, 2020, 2022), 
+    total_voters = c(289232, 208415, 247090, 216553, 247785, 
+    179453), absentee_total = c(16.8249018089285, 11.0577453638174, 
+    25.1054271722854, 21.7203178898468, 68.3774239764312, 34.3683304263512
+    ), absentee_mailed_received = c(4.25748188305582, 3.69023342849603, 
+    3.9576672467522, 4.79189851906923, 43.5494481102569, 18.2861250578146
+    ), absentee_in_person = c(12.5674199258727, 7.36751193532135, 
+    21.1477599255332, 16.9284193707776, 24.8279758661743, 16.0822053685366
+    ), election_day_total = c(83.1750981910715, 88.9422546361826, 
+    74.8945728277146, 78.2796821101532, 31.6225760235688, 65.6316695736488
+    ), election_day_already_reg = c(64.5450710848039, 69.1360986493295, 
+    56.9351248532923, 59.8814147114101, 23.113586375285, 52.424868907179
+    ), election_day_registrants = c(18.6300271062676, 19.8061559868532, 
+    17.9594479744223, 18.398267398743, 8.50898964828379, 13.2068006664698
+    )), class = c("tbl_df", "tbl", "data.frame"), row.names = c(NA, 
+-6L)) %>%
+  gt(rowname_col = "year") %>%
+  cols_label(
+    total_voters = "total",
+    absentee_total = "total",
+    absentee_mailed_received = "by mail",
+    absentee_in_person = "in person",
+    election_day_total = "total",
+    election_day_already_reg = "already reg.",
+    election_day_registrants = "e-day reg."
+  ) %>%
+  tab_spanner("voted early", columns = contains("absentee")) %>%
+  tab_spanner("voted on election day",
+              columns = contains("election_day")) %>%
+  fmt_number(columns = 2, decimals = 0) %>%
+  fmt_percent(columns = 3:8, decimals = 0, scale_values = F) %>%
+  tab_header(title = "Votes by mode",
+             subtitle = "City of Milwaukee, general elections")
+```
+
+The maps below show the popularity of different voting modes in each ward. Note that I've capped the color scale at 30% in each case. A handful of wards have extremely high usage rates of certain categories--for instance, election day registration is extremely common on college campuses.
+
+Election day registration declined in popularity in most of the city over the last decade. In 2022, it was most common in the wards near Marquette and UWM.
+
+Voting by mail was relatively uncommon until 2020, when the pandemic caused it to be the single most popular way to cast a ballot. The third of voters who continued to cast a ballot this way in 2022 were not evenly spread out across the city. Instead, mail-in voting was most common in the neighborhoods hugging the lake and on the periphery of the city. It was least popular in many near south side wards.
+
+The popularity of voting early, in person has waxed and waned around the city--perhaps following the availability of early voting locations. In 2012, it was popular downtown and across much of the east and north sides. Fewer votes were cast this way in 2014, but its popularity spiked again in 2016. In recent years, in-person early voting has been most popular in a section of the north side, roughly centered on the intersection of Capitol Drive and Fond du Lac Avenue.
+
+
+::: {.panel-tabset}
+
+### e-day registrants
+
+![](graphics/mke-eday-registrants.png)
+
+### early, by mail
+
+![](graphics/mke-by-mail.png)
+
+### early, in-person
+
+![](graphics/mke-early-in-person.png)
+
+:::
+
+# appendix - voting age population vs. voting eligible population
+
+The share of adults ineligible to vote, whether due to citizenship status or felony disenfranchisement, has grown over the past decades. According to census data, 1.8% of Milwaukee adults were non-citizens in 1980, rising to 2.8% in 1990, 6.2% in 2000, and 8.5% in 2010. Since then, the non-citizen share of the population has dipped slightly, falling to 7.7% in the most recent data.
+
+A 2022 report by [The Sentencing Project](https://www.sentencingproject.org/reports/locked-out-2022-estimates-of-people-denied-voting-rights/) estimated that about 1.4% of Wisconsin adults were disenfranchised due to a criminal conviction, including 7.4% and 2% of Black and Latino Wisconsites, respectively. Applying these proportions to the City of Milwaukee suggests that about 3.4% of the city's adult residents are ineligible to vote for this reason. In total, perhaps 11% of adults in the city are ineligible to vote as of 2022. I could not find historical data on felony disenfrachisement in Wisconsin, but the number of prisoners in the state grew dramatically in past decades--particularly in the 1980s and 1990s. The prison population grew [464% from 1980 to 2018](https://www.vera.org/downloads/pdfdownloads/state-incarceration-trends-wisconsin.pdf).
+
+A further complication is that while incarcerated adults are disproportionately from the City of Milwaukee, state prisons are generally located in rural areas. Consequently, some large proportion of ineligible adults are counted in the "adult population" denominator, not in Milwaukee, but in some rural county.
+
+Estimating specific historical numbers of *eligible* voters is difficult, but it's safe to say that the share of Milwaukee residents ineligible to vote has grown somewhat since the 1970s. If 50% of adults vote today, that surely represents a larger share of eligible voters than 50% of adults in the 1970s or 80s.

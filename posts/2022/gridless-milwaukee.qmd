@@ -1,0 +1,33 @@
+---
+title: "Grid-less Milwaukee"
+author: "John Johnson"
+date: "October 11, 2022"
+---
+
+::: {.column-margin}
+
+<br>
+
+<br>
+
+This map shows every street in Milwaukee which deviates by more than 4° from the cardinal directions. I used street centerline GIS file which already breaks streets into short segments.
+
+<br>
+
+The map hints at lots of stories. Here are a few.
+
+<br>
+
+Large chunks of angled street grids are in Bay View, Downtown, and the East Side. These areas predate the rest of the city. The bridges across the Milwaukee River are often angled to accomodate the different street layouts on either side. One of these early difficulties featured in the 1845 [Bridge War](https://emke.uwm.edu/entry/bridge-war/) between Juneautown and Kilbourntown.
+
+<br>
+
+The long diagonal streets follow old farm-to-market routes, often developed as plank toll roads, or "turnpikes." They are often named for their destination, "[such as Watertown Plank, Mukwonago, and Green Bay Roads, and Lisbon, Appleton, and Fond du Lac Avenues.](https://emke.uwm.edu/entry/county-roads/)"
+
+<br>
+
+The rectangular street grid pretty much disappears in Greendale, reflecting its origin as an experimental [New Deal greenbelt planned community](https://emke.uwm.edu/entry/greendale/).
+
+:::
+
+![map showing Milwaukee streets which deviate from the grid](graphics/gridless-milwaukee.jpg)

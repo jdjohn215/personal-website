@@ -1,0 +1,75 @@
+---
+title: "A closer look at the August partisan primary in the Milwaukee metro"
+author: "John Johnson"
+date: "August 14, 2024"
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+library(leaflet)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+
+qdf <- structure(list(county = c("Milwaukee", "Ozaukee", "Washington", 
+"Waukesha"), `primary preference_dem` = c(74.97444120005, 46.3432208478444, 
+27.4096726696115, 38.4814929948869), `primary preference_rep` = c(24.645302697097, 
+53.412593571114, 72.4062747763054, 61.2773210131956), `question 1_no` = c(71.2366234743068, 
+49.8674945104869, 35.1255458515284, 43.0024014637493), `question 1_yes` = c(28.7633765256932, 
+50.1325054895131, 64.8744541484716, 56.9975985362507), `question 2_no` = c(72.1507566540444, 
+49.8998223263902, 34.5364472753008, 42.8862368906907), `question 2_yes` = c(27.8492433459556, 
+50.1001776736098, 65.4635527246992, 57.1137631093093)), class = c("tbl_df", 
+"tbl", "data.frame"), row.names = c(NA, -4L))
+```
+
+Wisconsin’s 2024 August partisan primary featured no competitive races for statewide office, but it did include [many competitive legislative races](https://law.marquette.edu/facultyblog/2024/07/the-2024-wisconsin-assembly-races-are-the-most-contested-in-a-decade/) and two referendums on proposed amendments to the state constitution. Both referendums, which were supported by the GOP and opposed by Democrats, failed. Legislative primaries around the state returned mixed signals about the strength of incumbency, experience, and candidate endorsements.
+
+Statewide, the two [almost identical referendum questions](https://www.jsonline.com/story/news/politics/elections/2024/08/13/wisconsin-voters-reject-referendums-on-power-to-spend-federal-money/74724121007/) lost, with [just over 57% of voters casting](https://www.jsonline.com/elections/results/2024-08-13/wisconsin) a “no” ballot for each measure. They failed by a similar margin (about 56% “no”) in the 4-county Milwaukee metro.
+
+Besides the statewide referendums, each voter could also choose the partisan primary of their choice. The incentives to participate in a party’s primary can vary a lot from place to place, as sometimes only one party offers contested races. However, the balance of party participation in the August 2024 primary came fairly close to the balance of support for each party in the [last November election](https://mulawpoll.org/county-overview.html).
+
+Support for the ballot referendums trailed Republican primary participation across all three of the Republican-leaning WOW counties. In fact, the referendums actually lost in Ozaukee County by the narrowest of margins; 50.1% of Ozaukee county voters cast a “no” vote, while 53.4% voted in the Republican primary. By comparison, 55% voted for the Republican gubernatorial candidate in November 2022.
+
+The opposite occurred in Milwaukee County, where 75% of voters chose the Democratic primary, but slightly fewer (71% and 72%) voted against the referendums.
+
+In general, these results are consistent with nonpartisan elections. Without the formal cue of partisan affiliation on the ballot itself, votes tend to compress a bit at both ends of the political spectrum.
+
+```{r}
+qdf |>
+  gt(rowname_col = "county") |>
+  tab_spanner_delim("_") |>
+  fmt_percent(columns = contains("_"), scale_values = F, decimals = 1) |>
+  tab_header(title = "Partisan primary results in the Milwaukee metro",
+             subtitle = "unofficial, election night returns")
+```
+
+This map shows how every reporting unit (a ward or combination of wards) voted on the ballot questions.
+
+Notice the ongoing breakdown of Republican strength in Waukesha and Ozaukee counties. The WOW counties are no longer a unified block. Multiple wards in Port Washington, Grafton, Mequon, Menomonee Falls, Brookfield, and Waukesha all opposed the GOP-sponsored ballot referendums.
+
+```{r}
+read_rds("post-assets/primary-referendum-leaflet.rds")
+```
+
+*Data note: The reporting units mapped above use the most recent available GIS boundaries, but they still vary slightly from the reporting units used in the August 13 election. Several wards in Wauwatosa have been combined, and City of Milwaukee wards (355 and 356) are not displayed.*
+
+## Assembly primaries
+
+Two Milwaukee-area State Assembly primaries also provided insights into the region’s electorate.
+
+The 19th Assembly district is one of the state’s most liberal. The incumbent legislator, Ryan Clancy, is a member of the chamber’s 2-member Democratic Socialists caucus. He drew a more moderate challenger (Jarrod Anderson) with endorsements from several prominent local politicians, including the mayor and county executive. The race featured [unusually large](https://urbanmilwaukee.com/2024/08/13/rep-clancy-wins-reelection-despite-democratic-opposition/) spending for an assembly primary–more than $60,000 on each side.
+
+Clancy, the incumbent, won reelection with 55% of the vote, handily winning his home neighborhood of Bay View along with the less wealthy sections of the east side. Anderson won several of the district’s wealthier wards, along the lakefront.
+
+```{r}
+read_rds("post-assets/primary-ad19-leaflet.rds")
+```
+
+The 24th Assembly district featured a very different primary contest–albeit also one featuring a fringe and more moderate member of the same party. Incumbent legislator Janel Brandtjen was one of the state legislature’s most prominent election deniers following Trump’s 2020 loss. She even received Trump’s personal [endorsement](https://www.jsonline.com/story/news/politics/elections/2024/05/24/trump-endorses-election-denier-brandtjen-in-wisconsin-assembly-primary/73841512007/) for reelection earlier this year. Ultimately, that was not enough for her, as longtime state legislator Dan Knodl handily won with nearly 65% of the vote.
+
+Brandtjen’s official incumbency status is a bit deceiving in this race. Due to redistricting, only slightly more than half the voters remained the same as in her 2022 election. Dan Knodl previously represented the entirety of the new 24th assembly district as a state senator. In this way, Knodl may have benefited from even higher name recognition than Brandtjen.
+
+Brandtjen’s loss despite receiving a Trump endorsement may also reflect the limits of Trump’s appeal in these suburban communities. Previous non-Trump-aligned Republican primary candidates including Rebecca Kleefish, Jennifer Dorow, and Nikki Haley all posted some of their best performances in the WOW county suburbs.
+
+```{r}
+read_rds("post-assets/primary-ad24-leaflet.rds")
+```

@@ -1,0 +1,84 @@
+---
+title: "The 2024 Wisconsin Assembly Races are the Most Contested in a Decade"
+author: "John Johnson"
+date: "July 25, 2024"
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+
+contested.compare <- structure(list(year = c(2010, 2010, 2012, 2012, 2014, 2014, 2016, 
+2016, 2018, 2018, 2020, 2020, 2022, 2022, 2024, 2024, 2024, 2024
+), chamber = c("assembly", "senate", "assembly", "senate", "assembly", 
+"senate", "assembly", "senate", "assembly", "senate", "assembly", 
+"senate", "assembly", "senate", "assembly", "senate", "assembly", 
+"senate"), contested = c(68L, 15L, 72L, 10L, 47L, 14L, 50L, 8L, 
+61L, 13L, 79L, 11L, 73L, 12L, 82L, 11L, 82L, 11L)), row.names = c(NA, 
+-18L), class = c("tbl_df", "tbl", "data.frame"))
+```
+
+The state legislative districts Wisconsin [adopted](https://www.wispolitics.com/2024-redistricting/) in February 2024 bear little resemblance to the maps used previously.
+
+As I [wrote at the time](https://law.marquette.edu/facultyblog/2024/02/a-closer-look-at-the-partisan-implications-of-gov-evers-proposed-maps/), the new map is more competitive: there are more seats either party could win, and those seats will determine who controls both chambers. It is also more contested. The number of districts drawing a candidate from both parties, and the number of party primaries drawing multiple candidates are both unusually high.
+
+The contested nature of the new districts is the subject of this blog post.
+
+Voters in 82 Assembly districts (out of 99) will be able to choose between a Democrat and a Republican in November 2024. That is the highest number since at least 2010. In 2022, just 73 districts featured a candidate from both major parties.
+
+The situation in the State Senate is different. Only 11 (of 16) races offer both a Democrat and a Republican. That is down from 12 (out of 17) in 2022.
+
+```{r}
+contested.compare |>
+  pivot_wider(names_from = chamber, values_from = contested) |>
+  gt(rowname_col = "year") |>
+  tab_header(title = "Seats contested by both parties",
+             subtitle = "Wisconsin State Legislature") |>
+  tab_style(cell_text(weight = "bold"),
+            cells_title())
+```
+
+Under the new map, many legislators found themselves living in new districts—sometimes along with other sitting incumbents. This [big shakeup](https://www.wpr.org/news/wisconsin-legislature-run-old-districts-new-maps) creates a lot of opportunities for contested primaries.
+
+To see how this primary season compares to past years, I collected the election results from each August partisan primary beginning in 2012. Here are the results.
+
+Given that there are 99 Assembly districts, there can be a total of 198 Democratic or Republican contested primaries. In 2024, there will be 46, up from 31 in 2022, 25 in 2020, and 17 in 2018. The last time we saw more contested primaries was 2012, when 45 featured at least two candidates.
+
+The number of contested Republican primaries in 2024 is 2 more than in 2022. But the number of contested Democratic primaries grew from 8 in 2022 to 21 in 2024.
+
+Fewer State Senate races feature competitive primaries. Out of 16 seats (32 potential primaries), only 4 are contested, 2 for each party. This is down from 7 in 2022 and 8 in 2020.
+
+![barplots showing the number of contested seats by party](graphics/contested-by-party-barplot.png)
+
+Most Wisconsinites live in a district that leans quite strongly toward one party or the other, so the partisan primary is often the most consequential state legislative race available to these voters. I was curious how many districts feature a contested primary from either party.
+
+By this measure, 2024 is record setting, at least since 2012. Forty-five districts offer at least one contested Assembly primary. The next highest year is 2012, when 39 districts did so.
+
+About 60,000 people live in each district, so roughly 960,000 more Wisconsin residents live in a district with a competitive primary in 2024 than two years ago. Compared to 2018, 1.68 million more Wisconsinites live somewhere with a contested Assembly primary.
+
+![barplots showing the number of contested seats by district](graphics/contested-by-district-barplot.png)
+
+Of the 21 contested Democratic primaries, 9 are in southeastern Wisconsin (7 in Milwaukee County), and another 7 are in the greater Madison metro. Two are near Eau Claire, and one is in the newly Democratic-leaning district south of La Crosse.  Districts along Green Bay and Lake Superior have also drawn multiple Democratic candidates.
+
+The 25 contested Republican primaries include 9 in the north central and northwestern parts of the state. Another 7 contested districts are near Lake Winnebago, Brown County, Sheboygan, and Manitowoc. Finally, a set of districts in the more suburban areas of southeastern Wisconsin also feature multiple GOP candidates. None of the southwestern districts feature competitive Republican primaries.
+
+::: {.panel-tabset}
+
+## Statewide
+
+![contested status statewide map](graphics/PrimaryStatus-Assembly-2024.png)
+
+## Milwaukee area
+
+![contested status statewide map](graphics/PrimaryStatus-Assembly-2024_MilwaukeeArea.png)
+
+:::
+
+Two of the most interesting Assembly primaries are occurring in the Milwaukee metro, scarcely 20 miles apart. Each features an incumbent legislator who sits to the ideological fringe of their party, and each has drawn a challenger supported by more mainstream members of their party.
+
+The 24th Assembly district leans Republican by about 20 points. It covers parts of suburban Menomonee Falls and Germantown in southeastern Washington County. The current incumbent is Janel Brandtjen who has “[drawn national attention](https://www.jsonline.com/story/news/politics/elections/2024/05/24/trump-endorses-election-denier-brandtjen-in-wisconsin-assembly-primary/73841512007/) as one of the Wisconsin Legislature’s most prominent purveyors of conspiracies about the 2020 election.” Current Republican State Senator Dan Knodl has chosen to run instead in the 24th Assembly district Republican primary. Brandtjen has been endorsed by Donald Trump himself, while Knodl has drawn [support](https://www.wispolitics.com/2024/afp-wi-announces-new-round-of-legislative-endorsements/) from Americans for Prosperity-Wisconsin.
+
+The 19th district features a politician about as far removed from Janel Brandtjen as possible. Incumbent Ryan Clancy is a member of the Democratic Socialists of America and a cofounder of the state Assembly’s two-member [socialist caucus](https://apnews.com/article/politics-wisconsin-state-government-milwaukee-socialism-a2705953b8235369410df4ad4cf7eaef). He is endorsed by many of the state’s leading progressive organizations and some left-leaning Democratic legislators. His primary challenger is Jarrod Anderson, a self-described “[pragmatic progressive](https://wisconsinwatch.org/2024/06/milwaukee-wisconsin-election-democratic-primary-clancy-anderson-assembly/)” with endorsements from numerous local Democratic politicians including the mayor, the county executive, the chair of the county board of supervisors, and the district’s previous incumbent.
+
+Because both of these districts are strongly partisan—Republican in one case and Democratic in the other—contested primaries like these give voters a uniquely consequential choice between actual alternatives. For outside observers, they offer a unique opportunity to view the relative strength of the political coalitions which make up each party’s base.

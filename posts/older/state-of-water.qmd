@@ -1,0 +1,16 @@
+---
+title: "A State of Water"
+author: "John Johnson"
+date: "April 16, 2018"
+---
+
+## Wisconsin lakes, ponds, streams, and rivers
+
+11,339 square miles of Wisconsin is covered by water. That’s 17.3% of the state’s entire surface area.1
+
+The map below contains every perennial and intermittent lake, pond, stream, and river in Wisconsin. More opaque lines indicate more significant waterways. Streams and rivers are scaled in size and color by their number of tributaries. The faintest lines are streams that only carry water intermittently.
+
+All the data used for this map is from the [Wisconsin DNR](https://data-wi-dnr.opendata.arcgis.com/).
+
+
+![](graphics/wi-water.png)

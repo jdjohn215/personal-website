@@ -1,0 +1,232 @@
+---
+title: "Wisconsin Redistricting Plans"
+author: "John Johnson"
+date: "January 12, 2022"
+---
+```{r, include=FALSE}
+library(gt)
+library(tidyverse)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+```
+
+## Data note
+The original version of this memo included all the plans submitted to the Wisconsin Supreme Court in December 2021. [On January 10th, 2022](https://www.jsonline.com/story/news/politics/2022/01/10/wisconsin-supreme-court-wont-let-gop-offer-2nd-redistricting-plan/9162865002/), the Court accepted corrected versions of the Assembly and Senate redistricting plans submitted by Governor Evers and BLOC. This memo has been updated to include these small corrections from Evers and BLOC. The changes were mostly designed to improve plan conformity with current municipal boundaries. Compared with the original submission, Evers' corrections changed the Assembly district of 339 residents and the Senate district of 275. BLOC's corrections change the Assembly district of 245 residents and the Senate district of 161.
+
+On the same day, SCOWIS also rejected an alternative Congressional redistricting plan submitted by Wisconsin's Republican Congressmen. Accordingly, I do not consider that plan in this memo.
+
+## Degree of Change
+
+Since the legislature and governor failed to reach an agreement on redistricting, the process has moved to the Wisconsin Supreme Court. In December, the Court's conservative majority decided to adopt a "least change" approach to the existing districts. Since these districts were created by a strong Republican gerrymander in 2011, any districts created by this process will be a victory for the GOP.
+
+That said, some variation is still possible within the framework of "least change." Six different entities submitted plans to the Court, which may choose one of them or draw their own. The planners are:
+
+*   Governor Evers
+*   the Republican-controlled legislature
+*   the Milwaukee-based advocacy group Black Leaders Organizing Communities (BLOC), 
+*   State Senator Bewley (representing Senate Democrats)
+*   a Democratic-aligned activist named Lisa Hunter
+*   a group of intervenors going by the name Citizen Mathemeticians and Scientists (MathSci) who use computational redistricting techniques.
+
+Neither Bewley nor BLOC submitted a Congressional redistricting plan. Incidentally, the Bewley plans for Assembly and Senate are the only maps submitted which use the wards recently drawn by local governments as their building blocks. All the other plans use 2020 census blocks.
+
+### Population preserved
+
+The simplest measure of "least change" is just the share of the population moved from one district to another in a given redistricting plan. By this measure, Evers' plan makes the fewest changes--moving just 14.2% of Wisconsin's population into an Assembly district with a new district number.
+
+The Legislature's plan moves slightly more Wisconsinites into a new Assembly seat (15.8%). BLOC and Bewley move incrementally more, 15.9% and 16.4%, respectively.
+
+The Hunter and MathSci plans appear to have given little effort to "least change" considerations. The Hunter plan moves 26.9% of the state into a new Assembly district, while the MathSci plan moves 39%.
+
+```{r}
+structure(list(planner = c("evers", "legis", "bloc2", "bewley", 
+"hunter", "mathsci"), assembly = c(14.1784354120777, 15.8458039560088, 
+15.94675890499, 16.3778450207492, 26.9050029200583, 39.0171535183733
+), senate = c(7.78786837103506, 7.79341665142445, 10.3585207164645, 
+9.53679833341195, 19.1571771842494, 25.7110197671487), congress = c(5.46958643084043, 
+6.47864387132197, NA, NA, 6.9675542671027, 8.4775009594962)), class = c("tbl_df", 
+"tbl", "data.frame"), row.names = c(NA, -6L)) %>%
+  gt(rowname_col = "planner") %>%
+  fmt_percent(columns = 2:4, decimals = 1, scale_values = F) %>%
+  fmt_missing(columns = everything(), missing_text = "") %>%
+  tab_header(title = "Portion of population placed in the same district",
+             subtitle = "in proposed redistricting plans")
+
+```
+
+### District overlap
+
+District numbers are not necessarily meaningful. A planner could closely preserve the boundaries of existing districts while also changing the numbering scheme entirely. But in practice, none of the planners did this in their final submissions.
+
+For each submitted plan, I calculated the overlap between new an old districts. In the Legislature's Assembly plan, 98 of the new districts primarily overlap with the old district using the same number. Ninety-seven of the districts in Evers' and BLOC's plans do so, as do 96 of Bewley's, 90 of Hunter's, and 80 of MathSci's. Only the MathSci plan contains a senate district which *doesn't* mainly overlap with the same old senate district. All the proposed new Congressional districts mainly overlap with the same old Congressional district number.
+
+```{r}
+structure(list(planner = c("mathsci", "hunter", "bewley", "bloc2", 
+"evers", "legis"), assembly = c(80L, 90L, 96L, 97L, 97L, 98L), 
+    senate = c(32L, 33L, 33L, 33L, 33L, 33L), congress = c(8L, 
+    8L, NA, NA, 8L, 8L)), class = c("tbl_df", "tbl", "data.frame"
+), row.names = c(NA, -6L)) %>%
+  gt(rowname_col = "planner") %>%
+  fmt_missing(columns = everything(), missing_text = "") %>%
+  tab_header(title = "Number of districts mainly overlapping with the same old district",
+             subtitle = "in proposed redistricting plans")
+```
+
+## Population targets
+
+While all plans draw Congressional districts with essentially identical populations, they do vary in how closely they attain the ideal population for Assembly and Senate districts.
+
+In both cases, the MathSci maps come closest, followed by the legislature's plan. Evers' plan, although making the fewest changes to district boundaries, also comes less close to the ideal population for each district.
+
+The preferred measure of a plan's overall deviation from the ideal population is the range between the largest and smallest district, expressed as a percentage of the ideal district population.
+
+The Legislative Reference Bureau offers a detailed discussion of "constitutional standards for equal population" in [this memo](https://docs.legis.wisconsin.gov/misc/lrb/wisconsin_elections_project/redistricting_wisconsin_2020_1_2.pdf). Strict population equality is the standard for congressional districts. The Supreme Court lets state legislative districts vary by as much as 10%. Standards seem to be tighter in Wisconsin. "In recent decades, Wisconsin’s state legislative redistricting plans have fallen well below that 10 percent threshold, achieving a maximum overall range of less than 2 percent going back at least to 1982."
+
+```{r}
+structure(list(planner = c("legis", "mathsci", "evers", "hunter", 
+"mathsci", "legis", "bloc2", "mathsci", "legis", "hunter", "bewley", 
+"evers", "hunter", "bloc2", "evers", "bewley"), house = c("congress", 
+"congress", "congress", "congress", "assembly", "assembly", "assembly", 
+"senate", "senate", "assembly", "assembly", "assembly", "senate", 
+"senate", "senate", "senate"), min = c(736714L, 736714L, 736714L, 
+736714L, 59315L, 59312L, 59141L, 178131L, 178092L, 58980L, 58976L, 
+58996L, 177745L, 177681L, 177556L, 177010L), median = c(736715, 
+736715, 736715, 736714.5, 59522, 59548, 59511, 178572, 178550, 
+59501, 59522, 59522, 178507, 178599, 178661, 178567), ideal = c(736714.75, 
+736714.75, 736714.75, 736714.75, 59532.5050505051, 59532.5050505051, 
+59532.5050505051, 178597.515151515, 178597.515151515, 59532.5050505051, 
+59532.5050505051, 59532.5050505051, 178597.515151515, 178597.515151515, 
+178597.515151515, 178597.515151515), max = c(736715L, 736715L, 
+736716L, 736716L, 59753L, 59764L, 59925L, 179026L, 179118L, 60063L, 
+60080L, 60117L, 179443L, 179400L, 179710L, 179879L), sd = c(0.462910049886276, 
+0.462910049886276, 0.707106781186548, 0.886405260427918, 131.01560693271, 
+129.853007457127, 234.345827381174, 276.660116525237, 215.944310125916, 
+241.823361649652, 331.497972220762, 329.199101523105, 420.500231956842, 
+465.420449782514, 550.824672718786, 820.659457433933), range = c(1L, 
+1L, 2L, 2L, 438L, 452L, 784L, 895L, 1026L, 1083L, 1104L, 1121L, 
+1698L, 1719L, 2154L, 2869L), `range as % of ideal` = c(0.00013573774652944, 
+0.00013573774652944, 0.000271475493058881, 0.000271475493058881, 
+0.735732520626199, 0.759249085212425, 1.31692761682863, 0.501126792968378, 
+0.574476077749224, 1.81917424620588, 1.85444909308521, 1.88300492151134, 
+0.950741111128832, 0.962499393421945, 1.20606381235071, 1.60640532852098
+)), class = c("grouped_df", "tbl_df", "tbl", "data.frame"), row.names = c(NA, 
+-16L), groups = structure(list(house = c("assembly", "congress", 
+"senate"), .rows = structure(list(c(5L, 6L, 7L, 10L, 11L, 12L
+), 1:4, c(8L, 9L, 13L, 14L, 15L, 16L)), ptype = integer(0), class = c("vctrs_list_of", 
+"vctrs_vctr", "list"))), row.names = c(NA, -3L), .drop = TRUE, class = c("tbl_df", 
+"tbl", "data.frame"))) %>%
+  gt(rowname_col = "planner") %>%
+  fmt_number(columns = 3:8, decimals = 0) %>%
+  fmt_percent(columns = 9, decimals = 2, scale_values = F) %>%
+  tab_header(title = "Population summary statistics for legislative districts",
+             subtitle = "in proposed Wisconsin redistricting plans") %>%
+  tab_footnote("largest district population minus smallest district population",
+               locations = cells_column_labels("range")) %>%
+  tab_footnote("range as a percent of the ideal district size.",
+               locations = cells_column_labels("range as % of ideal"))
+```
+
+## Change map
+
+The map below shows precisely which areas of the state switch districts under each plan. The initial layer shows the existing districts drawn in 2011. Select a different radio button to view the lines under each proposed plan. For each plan, those areas of the state which change districts are shaded. District boundaries are slightly simplified for mapping purposes.
+
+```{r}
+readRDS("post-assets/proposed-assembly-districts-leaflet.rds")
+```
+
+## Minority Districts
+
+None of the plans vary in their creation of Hispanic majority or influence districts, but they do vary somewhat in the number of Black districts they create. In the figures below, I calculate these figures as the Black and Hispanic shares of the voting age population, and I define Black as those choosing "Black or African American alone" in the 2020 census. Alternatively, one could count the number of adults choosing Black either alone or in combination with another race. That method of counting would reveal the same pattern with slightly higher numbers.
+
+I define "majority" as more than 50% and "strong" as 40% - 50%.
+
+Given Wisconsin's geography, planners typically choose to draw either 6 or 7 Assembly districts where at least 40% of the voting age population is Black. Focusing on drawing districts with outright Black majorities limits the total to 6.
+
+For example, the plans drawn by Bewley and the Legislature both include 4 districts with an outright Black majority and 2 which are at least 40% Black. By contrast, the plans drawn by Evers and BLOC both draw zero districts with a Black majority, but they succeed in drawing 7 districts where more than 45% of the adult population is Black.
+
+The Hunter plan succeeds in drawing 2 majority-Black districts and 5 strong Black districts. But it attains this goal by drawing 2 districts where the Black population is in the low 40s.
+
+The MathSci plan is a clear outlier. It would create three majority Black districts, including one where Black residents constitute more than 80% of the adult population. But it creates no 40%-50% Black districts. Instead, there are 4 districts where between 30% and 40% of the population is Black.
+
+::: {.panel-tabset}
+
+### table
+
+```{r}
+structure(list(planner = c("bewley", "bewley", "bloc2", "bloc2", 
+"evers", "evers", "hunter", "hunter", "legis", "legis", "mathsci", 
+"mathsci"), house = c("assembly", "senate", "assembly", "senate", 
+"assembly", "senate", "assembly", "senate", "assembly", "senate", 
+"assembly", "senate"), black_majority = c(4L, 2L, 0L, 0L, 0L, 
+0L, 2L, 1L, 4L, 2L, 3L, 1L), black_strong = c(2L, 0L, 7L, 2L, 
+7L, 2L, 5L, 1L, 2L, 0L, 0L, 1L), hispanic_majority = c(2L, 0L, 
+2L, 0L, 2L, 0L, 2L, 0L, 2L, 0L, 2L, 0L), hispanic_strong = c(0L, 
+1L, 0L, 1L, 0L, 1L, 0L, 1L, 0L, 1L, 0L, 1L)), class = c("grouped_df", 
+"tbl_df", "tbl", "data.frame"), row.names = c(NA, -12L), groups = structure(list(
+    house = c("assembly", "senate"), .rows = structure(list(c(1L, 
+    3L, 5L, 7L, 9L, 11L), c(2L, 4L, 6L, 8L, 10L, 12L)), ptype = integer(0), class = c("vctrs_list_of", 
+    "vctrs_vctr", "list"))), class = c("tbl_df", "tbl", "data.frame"
+), row.names = c(NA, -2L), .drop = TRUE)) %>%
+  gt(rowname_col = "planner") %>%
+  tab_spanner_delim(delim = "_") %>%
+  tab_header("VRA Assembly districts under Wisconsin redistricting plans") %>%
+  tab_footnote("Includes non-Hispanic Black alone adults", locations = cells_column_spanners(1)) %>%
+  tab_footnote("Includes Hispanic or Latino adults of any race", locations = cells_column_spanners(2)) %>%
+  tab_footnote("between 40% and 50%", locations = cells_column_labels(columns = contains("strong"))) %>%
+  tab_footnote("more than 50%", locations = cells_column_labels(columns = contains("majority"))) %>%
+  tab_style(style = cell_text(weight = "bold"), locations = cells_row_groups())
+```
+
+### Assembly chart
+
+![](graphics/assembly-vra.png)
+
+### Senate chart
+
+![](graphics/senate-vra.png)
+
+:::
+
+## Partisan lean
+
+I like to describe a plan's partisan implications using two statistics. How many seats would Democrats likely win in a statewide tie, and how large of a statewide victory do Democrats require to have a realistic chance of winning a legislative majority?
+
+Plans vary considerably by both statistics. In a statewide tie, BLOC's plan is best for Democrats. They would expect to win 42 Assembly seats. The MathSci, Hunter, and Bewley plans would probably yield 39 Democratic seats in a statewide tie. The Evers plan would make 38, and the Legislature's plan 36.
+
+Bewley's plan makes it easiest for Democrats to win a statewide majority. A statewide victory of 6.2 (53.1%) points would put 50 seats in play. BLOC's plan is about the same, requiring a 6.6 point swing, followed by Evers plan (7.4), Hunter's (7.6), and MathSci (10.4). 
+
+Unsurprisingly, the plan passed by legislative Republicans is clearly the worse for Democrats. Under that map, Democrats would need to win Wisconsin by 12.4 points, or 56.2% of the two-party vote, in order to have a decent chance at winning 50 Assembly seats.
+
+```{r}
+structure(list(planner = c("legis", "evers2", "bewley", "hunter", 
+"mathsci", "bloc2", "evers"), `seats won in a statewide tie_assembly` = c(36L, 
+38L, 39L, 39L, 39L, 42L, NA), `statewide margin needed for a majority_assembly` = c(12.4, 
+7.4, 6.2, 7.6, 10.4, 6.6, NA), `seats won in a statewide tie_senate` = c(10L, 
+11L, 12L, 11L, 11L, 11L, NA), `statewide margin needed for a majority_senate` = c(10.6, 
+8.2, 6.9, 9.3, 6.4, 8.1, NA), `seats won in a statewide tie_congress` = c(2L, 
+NA, NA, 2L, 3L, NA, 2L), `statewide margin needed for a majority_congress` = c(15.5, 
+NA, NA, 15.4, 16.1, NA, 16.1)), class = c("tbl_df", "tbl", "data.frame"
+), row.names = c(NA, -7L)) %>%
+    gt(rowname_col = "planner") %>%
+    tab_spanner_delim(delim = "_") %>%
+    fmt_number(columns = contains("majority"), decimals = 1) %>%
+    fmt_missing(columns = everything(), missing_text = "") %>%
+    tab_header(title = "Democratic performance under proposed redistricting plans",
+               subtitle = "Based on a uniform statewide swing from the current partisan baseline") %>%
+    tab_source_note("Partisan baselines are calculated as the average of the 2016 pres, 2018 gov, and 2020 pres elections in each district.")
+```
+
+::: {.panel-tabset}
+
+### Assembly chart
+
+![](graphics/wsa-leans.png)
+
+### Senate chart
+
+![](graphics/wss-leans.png)
+
+### Congress chart
+
+![](graphics/congress-leans.png)
+
+:::
