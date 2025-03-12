@@ -20,3 +20,6 @@ Here are some projects on other websites.
   
 * [My Github account](https://github.com/jdjohn215/)
   * lots of code and data for various projects including [this website](https://github.com/jdjohn215/personal-website/)
+  
+* [My professional directory](https://law.marquette.edu/faculty-and-staff-directory/john-johnson)
+  * links and contact details for my day job
