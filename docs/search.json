@@ -991,13 +991,13 @@
     "href": "about.html#about-me",
     "title": "About",
     "section": "about me",
-    "text": "about me\nI live in Milwaukee, Wisconsin where I’m employed as a Research Fellow at the Marquette University Law School. At work, I mainly study housing, demographics, and elections in Wisconsin. My other interests, which I occasionally write about, include ecology, geography, 20th century history, and American religion."
+    "text": "about me\nI live in Milwaukee, Wisconsin where I’m employed as a Research Fellow at the Marquette University Law School. At work, I mainly study housing, demographics, and elections in Wisconsin. Other interests I occasionally write about include ecology, geography, 20th century history, and American religion."
   },
   {
     "objectID": "about.html#about-this-website",
     "href": "about.html#about-this-website",
     "title": "About",
     "section": "about this website",
-    "text": "about this website\nThis is a static website, built with the Quart technical publishing system. You can see all the source code in this Github repo."
+    "text": "about this website\nThis is a static website, built with the Quarto technical publishing system. You can see all the source code in this Github repo."
   }
 ]
