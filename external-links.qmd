@@ -17,3 +17,6 @@ Here are some projects on other websites.
 
 * [Blue Book Newsletter](https://bluebookmke.substack.com/)
   * subscribe to receive occasional posts in your inbox
+  
+* [My Github account](https://github.com/jdjohn215/)
+  * lots of code and data for various projects including [this website](https://github.com/jdjohn215/personal-website/)
