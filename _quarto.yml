@@ -13,6 +13,7 @@ website:
         href: external-links.qmd
       - text: "Blue Book Newsletter"
         href: https://bluebookmke.substack.com/
+        target: _blank
       - about.qmd
   google-analytics: "G-31XDQG3G4L"
 
