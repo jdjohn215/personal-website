@@ -1,0 +1,5 @@
+[[plugins]]
+package = "@quarto/netlify-plugin-quarto"
+
+# Google Analytics
+googleAnalytics = "UA-117679610-1"
