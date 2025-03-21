@@ -52,6 +52,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Politics
 
+[How Many Wisconsinites Lack a Photo ID?](posts/2025/wisc-photo-id-coverage.html)
+
 [Perceptions of Donald Trump a month into his second term](posts/2025/trump-perceptions-february.html)
 
 [Get ready for 6 years of Supreme Court races](posts/2025/scowis-preview.html)
