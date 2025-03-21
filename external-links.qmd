@@ -14,6 +14,9 @@ Here are some projects on other websites.
 * [Wisconsin Elections Archive](https://github.com/jdjohn215/wisc-elections-archive)
   * integrated election results at the reporting unit, municipality, and county levels
   * matched to unique Census geography codes
+  
+* [2025 Special Elections Tracker](https://github.com/jdjohn215/special-elections-2025)
+  * tracking how state legislative and congressional special elections compare to the 2024 presidential election in that district
 
 * [Blue Book Newsletter](https://bluebookmke.substack.com/)
   * subscribe to receive occasional posts in your inbox

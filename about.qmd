@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+Welcome!
+
 As more and more of the internet gets eaten by the continuous algorithmic scroll, my hope is to preserve a bit of the old, eclectic internet I grew up with.
 
 To that end, this website includes various personal and professional written projects. Many of these appeared somewhere else first; my goal is to gather and preserve them all in one convenient place. It's a work in progress.
