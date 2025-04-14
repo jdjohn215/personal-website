@@ -11,6 +11,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Miscellaneous 
 
+[Milwaukee County's Remotest Point](posts/2025/milwaukee-remotest-point.html)
+
 <div class="text-divider">2025</div>
 
 [An appreciation of walking to the polls](posts/2024/milwaukee-walking-to-the-polls.html)
