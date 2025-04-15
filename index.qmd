@@ -106,6 +106,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Housing
 
+[The prohibitive cost of building housing in Milwaukee](posts/2024/milwaukee-cost-of-construction.html)
+
 <div class="text-divider">2025</div>
 
 [The changing cost of buying vs renting](posts/2024/rent-vs-buy.html)
