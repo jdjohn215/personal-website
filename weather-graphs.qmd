@@ -1,0 +1,13 @@
+---
+title: "Milwaukee Weather Graphs"
+---
+
+These graphs are updated automatically via Github Actions. See [this repository](https://github.com/jdjohn215/milwaukee-weather/tree/main) for code and documentation.
+
+:::{.column-body-outset}
+
+![Daily high temperature at Milwaukee's airport](https://raw.githubusercontent.com/jdjohn215/milwaukee-weather/refs/heads/main/graphs/DailyHighTemp_USW00014839.png)
+
+![Cumulative annual rainfall](https://raw.githubusercontent.com/jdjohn215/milwaukee-weather/refs/heads/main/graphs/AnnualCumulativePrecipitation_USW00014839.png)
+
+:::
