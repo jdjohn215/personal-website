@@ -9,7 +9,9 @@ Links are arranged thematically by reverse chronological order.
 
 ::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
 
-## Miscellaneous 
+## Miscellaneous
+
+[Interactive Historical Maps of Milwaukee](posts/2025/historic-mke-maps.html)
 
 [Milwaukee County's Remotest Point](posts/2025/milwaukee-remotest-point.html)
 
