@@ -1,0 +1,109 @@
+---
+title: "What the Supreme Court Election tells us about Wisconsin’s Legislative Districts"
+author: "John Johnson"
+date: "June 4, 2025"
+reference-location: margin
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+library(tidyverse)
+library(gt)
+```
+
+You might think that adding up the results of a statewide April election in legislative districts should be simple, but it’s not.
+
+First problem: the state currently doesn’t include political district numbers in the results for nonpartisan elections.
+
+Second problem: votes in Wisconsin are counted, not in wards, but in combinations of wards called “reporting units,” and April nonpartisan elections can use different reporting units than in November elections.
+
+Third problem: the reporting units used in April sometimes straddle partisan district lines.
+
+So, my media consumer advisory is this; if you read an article telling you the results of an April election apportioned into legislative districts, you should expect to see an explanation of how the author obtained that data.
+
+Here is how I do it. First, I identify the individual wards comprising each reporting unit. Then, I match those wards to the most recent GIS ward file I can find.^[I begin with the most recent LTSB stateward ward boundary file (Jan. 2025 in this case). When recent annexations or incorporations make these boundaries already out-of-date, I obtain updated boundaries from the county. For the April 2025 election, I needed updated ward boundary files from Dane and Waukesha counties.] Every ward falls within a single political district, so I check to be sure that each ward in every reporting unit is assigned to the same district. If a reporting unit is split across multiple districts, I divide its vote according to the proportion of the reporting unit’s registered voters residing within each district.^[I do this using a geocoded copy of the state’s voter file, but it could also be done using the state’s monthly ward-level registered voter report.]
+
+Here are the results of the 2025 April Supreme Court election between the Republican-endorsed candidate Brad Schimel and the Democratic-endorsed candidate Susan Crawford.
+
+Crawford won 55.0% of the vote. Under the maps as currently used, this worked out to 54.5% of Assembly districts (54/99), 57.6% of Senate districts (19/33), and 50% of Congressional districts (4/8).
+
+```{r}
+structure(list(house = c("State Assembly", "State Senate", "Congress"
+), Schimel = c(45, 14, 4), Crawford = c(54, 19, 4)), row.names = c(NA, 
+-3L), class = c("tbl_df", "tbl", "data.frame")) |>
+  gt(rowname_col = "house") |>
+  tab_header(title = "Results of the 2025 Wisconsin Supreme Court Election",
+             subtitle = "in legislative districts") |>
+  tab_spanner("seats won by", columns = 2:3)
+```
+
+The next table compares those results with some of the other recent redistricting plans, either proposed or used. Under the GOP-drawn maps used in the 2022 election, Crawford's 10-point net victory would've resulted in 5-seat Republican majority in the Assembly and a 3-seat Republican majority in the Senate.
+
+```{r}
+structure(list(planner = c("Evers' 2024 (used in state legislature)", 
+"Evers' Least Change", "Districts used 2012-2020", "Districts used in 2022", 
+"GOP Congressmen proposal 2021"), `State Assembly_Schimel` = c(45, 
+47, 48, 52, NA), `State Assembly_Crawford` = c(54, 52, 51, 47, 
+NA), `State Senate_Schimel` = c(14, 17, 17, 18, NA), `State Senate_Crawford` = c(19, 
+16, 16, 15, NA), Congress_Schimel = c(NA, 4, 5, NA, 5), Congress_Crawford = c(NA, 
+4, 3, NA, 3)), row.names = c(NA, -5L), class = c("tbl_df", "tbl", 
+"data.frame")) |>
+  gt(rowname_col = "planner") |>
+  tab_spanner_delim("_") |>
+  sub_missing() |>
+  tab_header(title = "Results of the 2025 Wisconsin Supreme Court Election",
+             subtitle = "in select alternative legislative districts")
+```
+
+## Implications for 2026
+
+Wisconsin's state legislative maps now closely reflect the results at the top of the ticket. Both Donald Trump and Tammy Baldwin translated their narrow 1-point victories into 1-seat majorities of assembly districts. But actual Republican assembly candidates won a 5-seat majority. 
+
+In previous analyses, I found that incumbency advantage was worth about 4 points (net) for Republican Assembly candidates in both [2024](https://law.marquette.edu/facultyblog/2025/01/how-much-of-the-republican-assembly-victory-was-thanks-to-incumbency/) and [2022](https://law.marquette.edu/facultyblog/2023/04/incumbency-advantage-in-the-2022-wisconsin-assembly-election/). This advantage means that the Republican Assembly majority can likely withstand election years resulting in a narrow statewide victory for Democrats. But anything approaching Crawford's landslide victory puts many Republican incumbents in competitive districts much more at risk.
+
+Here are the 6 closest battleground seats in the State Assembly. They are all seats which split their vote between the Assembly and presidential races. Five of them voted for Harris and a Republican legislator, while one voted for Trump and a Democratic legislator. In all instances, Susan Crawford defeated Schimel by double-digits.
+
+```{r}
+structure(list(wsa_dist = c("21st", "51st", "53rd", "61st", "88th", 
+"94th"), state_assembly = c(-2.81741343270017, -3.38299737072743, 
+-1.16368286445013, -3.23845186203668, -0.650541131941573, 0.591974247756227
+), president = c(4.04651298682327, 3.48986766513276, 4.36651301856236, 
+2.20499914202368, 0.347262082424521, -2.14310777618829), us_senate = c(6.96914808326157, 
+7.76234656831672, 6.10833411927442, 3.66709183673469, 1.24648520161173, 
+-0.0353395313434461), scowis = c(19.3089700996678, 19.9368711777471, 
+17.9617261006957, 13.4689962887286, 11.291553821748, 12.3308483020737
+)), row.names = c(NA, -6L), class = c("tbl_df", "tbl", "data.frame"
+)) |>
+  gt(rowname_col = "wsa_dist") |>
+  cols_label(state_assembly = "State Assembly",
+             president = "President",
+             us_senate = "US Senate",
+             scowis = "WI Sup. Ct.") |>
+  fmt_number(columns = 2:5, decimals = 1) |>
+  data_color(columns = 2:5, palette = "RdBu", domain = -21:21) |>
+  tab_spanner(label = "Dem or Lib % minus Rep or Con %",
+              columns = 2:5) |>
+  tab_header(title = "Election Results in Key Battleground Districts",
+             subtitle = "of the Wisconsin State Assembly")
+```
+
+Likewise, there are 4 battleground State Senate districts, one of which (the 31st) is currently represented by a Democrat and the rest by Republicans. Because Wisconsin elects odd-numbered senate districts during midterm years, these seats will hold their first elections under the new boundaries in 2026. As in the Assembly battlegrounds, Crawford won each of these districts by more than her statewide margin of victory.
+
+```{r}
+structure(list(wss_dist = c("5th", "17th", "21st", "31st"), president = c(5.86412223396854, 
+1.03279925860109, 1.23122161989158, 2.17670759785111), us_senate = c(4.95951324813961, 
+4.60738028711822, 2.23394133246958, 4.67809575583427), scowis = c(13.48894471112, 
+17.9488892154374, 10.6578529376272, 18.0326238828219)), row.names = c(NA, 
+-4L), class = c("tbl_df", "tbl", "data.frame")) |>
+  gt(rowname_col = "wss_dist") |>
+  cols_label(president = "President",
+             us_senate = "US Senate",
+             scowis = "WI Sup. Ct.") |>
+  fmt_number(columns = 2:4, decimals = 1) |>
+  data_color(columns = 2:4, palette = "RdBu", domain = -21:21) |>
+  tab_spanner(label = "Dem or Lib % minus Rep or Con %",
+              columns = 2:4) |>
+  tab_header(title = "Election Results in Key Battleground Districts",
+             subtitle = "of the Wisconsin State Senate")
+```
+

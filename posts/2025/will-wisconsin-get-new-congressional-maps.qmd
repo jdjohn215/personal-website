@@ -1,0 +1,59 @@
+---
+title: "Will Wisconsin Get New Congressional Maps?"
+author: "John Johnson"
+date: "July 17, 2025"
+---
+
+When the election of the liberal justice Janet Protasiewicz flipped the balance of the Wisconsin Supreme Court in 2023, liberal groups responded immediately. A lawsuit was filed the day after she joined the court, which led to the new liberal majority barring further use of the existing state assembly and senate districts. Those maps had been crafted by Republican legislators and redounded greatly to their benefit. In 2022, the Democratic Governor Tony Evers won reelection with 51.1% of the vote, yet he only carried a majority in 39 of 99 Assembly and 13 of 33 Senate seats.
+
+For fear of the Court imposing an even worse map (for them), Republican legislators responded by passing a map drawn by Evers. Evers accepted this compromise; although it was opposed by almost all state legislators from his own party. The results of this new map were on full display in November 2024. Harris lost the state with 48.7% of the vote, but she still carried a majority of the vote in 49 of 99 assembly seats and 17 of 33 senate seats.
+
+Throughout all of this, the 8 Wisconsin congressional districts remained unchanged. In fact, the congressional map used in 2022 was barely different from the one drawn in 2011.
+
+Spring 2025 once again saw the ideological balance of the Supreme Court at stake. This time, a victory by the conservative candidate would have flipped the majority back to its pre-2023 status quo. Instead, the liberal candidate Susan Crawford won by 10 points, and liberal groups again responded by promptly filing redistricting lawsuits, this time challenging the Congressional map.
+
+To date, two petitions and one complaint (from different prominent firms) have been filed, each making quite different arguments as to why the state courts should toss the current map. The first two petitions were filed directly with the State Supreme Court. Although the court agreed to hear opposing and supporting briefs to the petitions, they ultimately declined to hear them in late June, issuing no comment about the merits of the arguments presented. The third complaint was filed with the Dane County circuit court shortly after the first two were rejected. For reasons I’ll discuss below, this latest case makes arguments which may bear more fruit for those seeking new maps.
+
+## How Bad is the Current Congressional Map for Democrats?
+
+When turnout is highest, Wisconsin is consistently a 50/50 state. Wisconsin’s split senate delegation reflects this—it is one of only three states to be represented by both a Republican and a Democrat in Congress’ upper chamber. However, Democrats only hold 2 of 8 House seats. This current split does exaggerate the Republican advantage somewhat. With strong candidates running in a year when the national environment tilts left, Democrats could realistically flip the 1st and 3rd districts, both of which are on target lists for 2026.
+
+In other words, the best case scenario for Democrats under the current Congressional map is half the seats. That was never a realistic possibility in either chamber of the state legislature under the previous state legislative maps.
+
+Still, even a great year for Democrats—one where their candidates win solid statewide majorities—is exceedingly unlikely to deliver them a fifth U.S. Representative. The next closest district is the 8th, in northeastern Wisconsin. In 2024 it voted for Donald Trump by 16 points. Absent a historically dramatic upset, Republicans are assured of no fewer than half the state’s congressional seats, even in a bad year.
+
+In practice, the partisan bias of the Congressional map lies between that of the current state legislative map (very little bias) and the older maps used from 2012-22 (extreme Republican bias). The reason for this intermediate position lies with the way it was created.
+
+Unlike the 2012-22 state legislative maps, which were drawn by Republicans to maximize their own partisan interests, the Congressional map was drawn in 2011 with input from all congressmembers. Certainly, this group skewed Republican. It was led by Paul Ryan and included 5 Republicans to 3 Democrats. But the interests of each sitting representative were solicited in the drawing of the map, and no incumbent home addresses were paired under the new boundaries. The state legislature then passed the reapportioned Congressional map as received.
+
+In this way, the 2011 congressional map was less a map drawn by Republicans to benefit Republicans and more a map drawn by incumbents to benefit incumbents (5/8ths of whom happened to be Republican).
+
+No such bipartisan congressional redistricting plan emerged after the 2020 census. The GOP Congressmen created their own preferred plan, which would have shifted the 3rd district to the right, largely by removing its panhandle to Stevens Points (a blue college town). Ultimately, the state Supreme Court chose Evers’ plan which provided the fewest alterations from the 2011 district boundaries among all submitted plans.
+
+## Three Arguments Against the Current Maps
+
+The first petition, Bothfield vs WEC, was filed by the Elias Law Group on May 7th. It took a maximalist approach, arguing that partisan gerrymandering violates the Wisconsin Constitution’s guarantees of free speech, association, equal protection, and free government. No court has ever found that partisan gerrymandering as such violates the Wisconsin constitution, so this was an ambitious attempt to convince the Supreme Court to issue a new landmark ruling with far-reaching implications.
+
+The second petition, Felton vs WEC, was filed by the Campaign Legal Center one day later. In contrast to Bothfield, it sought to ban the current maps on narrow, technical grounds, with the word “gerrymandering” appearing nowhere in the text. Instead, the petitioners argued that the 8 congressional districts are unconstitutionally malapportioned because one of the districts has a single extra person in the 2020 census count. Specifically, “to come as close as possible to mathematical equality, six districts should contain 736,715 persons and two districts should contain 736,714 persons.” However, the existing map has 3 districts with populations of 736,714, four districts with populations of 736,715, and one district with 736,716 members.
+
+This argument strikes me as meritless on statistical grounds for three reasons:
+
+* Nobody actually thinks the census count is accurate enough for a 1-person difference to mean anything.
+* Even if the original census count was this accurate, the published numbers aren’t, because the Census Bureau began deliberately injecting statistical noise into their counts in 2020.
+* The internal population of Wisconsin has shifted by many thousands of individuals since the census was conducted more than 5 years ago.
+
+It may be that the arguments from the first petition were too extreme a departure from existing precedent for the court’s comfort, while the second petition rested on a literally miniscule technicality with no real-world consequence. The Court’s invalidation of the state legislative maps on contiguity grounds was also criticized as a narrow technically, but the contiguity issue did at least actually affect dozens of districts and thousands of people. Whatever its reasons, the Court denied further consideration of either petition on June 25th.
+
+The third court case couples its new arguments with an alternative legal strategy. Wisconsin Business Leaders for Democracy vs WEC was filed on July 8th by several firms, including Law Forward, who brought the successful challenge to the state legislative maps in 2023. Unlike the two previous petitions, it was filed not under the Supreme Court’s original jurisdiction, but as a lawsuit in Dane County circuit court.
+
+The complaint alleges that the existing boundaries are indeed unconstitutional due to gerrymandering, but not, as Bothfield claimed, partisan gerrymandering. Instead, the complaint argues that the map is an anti-competitive gerrymander because it “was intentionally designed to create districts that protected the incumbent members of Wisconsin’s delegation in the U.S. House of Representatives.”
+
+The argument is not that the existing map benefits Republicans over Democrats, but that it was drawn by incumbents to protect themselves from future challengers (of either party). “An anti-competitive gerrymander occurs when elected officials work in concert to draw district lines to suppress electoral competition, thereby benefiting incumbent politicians to the detriment of voters.”
+
+Specifically, the plaintiffs argue that such anti-competitive gerrymanders violate the Wisconsin Constitution’s “guarantees of equal protection to all citizens, the promise to maintain a free government, and the right to vote.” The complaint recognizes that no Wisconsin court has previously recognized such a claim, so they propose a new two-part test. “Under this approach, an unconstitutional anti-competitive gerrymander exists where there is evidence (1) of an intent to suppress competition, and (2) that competition was indeed suppressed relative to alternative maps that satisfy all applicable legal requirements.”
+
+In this way, the Wisconsin Business Leaders for Democracy complaint seeks to offer the courts a way to identify and strike down gerrymanders without relying on any particular partisan outcome. But does the state constitution actually ban anti-competitive gerrymanders, as defined above?
+
+The complaint reads, “The anti-competitive gerrymander embodied in Wisconsin’s current congressional map renders the votes of many Wisconsinites . . . essentially worthless in elections for the U.S. House of Representatives. That devaluation of some Wisconsinites’ votes makes a mockery of equal protection, undermines, the ‘fundamental principles’ enshrined in Article I, S22, and flagrantly disregards the Wisconsin Constitution’s commitment to the fundamental right to vote.”
+
+These arguments rely on a “living constitutionalism” approach to the law, in which a constitution is understood less as a fixed set of proscriptions and more as a source of principles whose application evolves to meet the needs of a changing society. Whether or not the judges of the Dane County circuit court find these arguments compelling remains to be seen. If they do, I have no doubt the case will proceed to the Wisconsin Supreme Court.
