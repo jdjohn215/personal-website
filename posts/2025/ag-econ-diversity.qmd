@@ -99,7 +99,7 @@ The difference between Illinois and Wisconsin is striking on this map. Both incl
 
 ```{r}
 #| fig-cap-location: top
-#| fig-cap: "Figure 4: Quartiles of Total Agricultural Commodity Sales"
+#| fig-cap: "Figure 5: Quartiles of Agricultural Economic Diversity Among the Top 25% of Counties by Sales"
 knitr::include_graphics(here::here("posts/2025/graphics/ag-diversity/county-topsales-diversity-quartile.svg"))
 ```
 
@@ -147,7 +147,7 @@ Two pictures of farming emerge. In McDonough county, a smaller number of large f
 
 In Vernon county, the biggest single commodity is milk, which is a far more labor-intensive product. But the rest of the agricultural economy is also split into a larger range of products, many of them also more labor intensive than standard row crops. More farms exist, employing more farmers and farmworkers, likely with concomitant positive effects on the rest of the county.
 
-Why has Vernon county retained more small farms growing and raising a more diverse mix of crops and animals than McDonough county, some 200 miles south? A partial answer lies, I suspect in the topography of the two counties. McDonough, like most of Illinois, is flat. 
+Why has Vernon county retained more small farms growing and raising a more diverse mix of crops and animals than McDonough county, some 200 miles south? A partial answer lies, I suspect, in the topography of the two counties. McDonough, like most of Illinois, is flat. 
 
 The land lends itself to enormous corn fields. When the land behind my childhood home went on the market, a larger farmer bought adjacent fields and simply plowed under the hedgerows. The new field is 240 acres--enough to constitute an [entire good-sized farm](https://www2.census.gov/library/publications/decennial/1950/agriculture-volume-1/15357921v1p5ch1.pdf) when my grandfather was young. In fields this size, the economic logic of corn and soybeans is obvious. 
 
