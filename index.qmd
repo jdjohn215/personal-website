@@ -11,6 +11,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Miscellaneous
 
+[A Look at Agricultural Economic Diversity in Wisconsin and Illinois](posts/2025/ag-econ-diversity.html)
+
 [Interactive Historical Maps of Milwaukee](posts/2025/historic-mke-maps.html)
 
 [Milwaukee County's Remotest Point](posts/2025/milwaukee-remotest-point.html)
