@@ -5,7 +5,6 @@ format:
     page-layout: full
     cr-style:
       section-background-color: white
-    embed-resources: true
 author: "Mitchell Henke & John Johnson"
 ---
 ```{r setup, include=FALSE}
