@@ -114,7 +114,7 @@ Links are arranged thematically by reverse chronological order.
 
 ## Housing
 
-[The prohibitive cost of building housing in Milwaukee](posts/2024/milwaukee-cost-of-construction.html)
+[The prohibitive cost of building housing in Milwaukee](posts/2025/milwaukee-cost-of-construction.html)
 
 <div class="text-divider">2025</div>
 
