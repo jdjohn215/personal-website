@@ -60,6 +60,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Politics
 
+[The Decline in Support for Democratic Candidates among Black Milwaukeeans is Easily Exaggerated](posts/2025/black-voter-preferences-mke.html)
+
 [Will Wisconsin Get New Congressional Maps?](posts/2025/will-wisconsin-get-new-congressional-maps.html)
 
 [What the Supreme Court Election tells us about Wisconsin’s Legislative Districts](posts/2025/scowis2025-legislative-implications.html)
@@ -113,6 +115,8 @@ Links are arranged thematically by reverse chronological order.
 ::: {.g-col-lg-3 .g-col-md-4 .g-col-sm-6 .g-col-12}
 
 ## Housing
+
+[Landlords Owe More Delinquent Taxes than Homeowners in Milwaukee](posts/2025/mke-tax-delinquency.html)
 
 [The prohibitive cost of building housing in Milwaukee](posts/2025/milwaukee-cost-of-construction.html)
 

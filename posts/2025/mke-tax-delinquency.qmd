@@ -1,0 +1,76 @@
+---
+title: "Landlords Owe More Delinquent Property Taxes than Homeowners in Milwaukee"
+author: "John Johnson"
+date: "September 17, 2025"
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(gt)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+
+# this includes all properties with currently delinquent taxes as of 9/5/2025
+#   I drop records for properties which are owned by the city or another tax exempt
+#   agency or for which there is no parcel record in the current MPROP file
+mprop <- read_csv("~/Dropbox/Projects/2025/August/highgrove-map/delinquent-taxes/mprop-delinquent-taxes.csv")
+
+taxes.by.network <- mprop |>
+  filter(status == "residential landlord") |>
+  group_by(final_group) |>
+  summarise(parcels = n(),
+            taxes_owed = sum(delinquent_total_tax_principal))
+```
+
+
+Each month, the City of Milwaukee [posts an updated list](https://data.milwaukee.gov/dataset/delinquent-real-estate-tax-accounts) of unpaid property taxes. As I write this, the latest data is as of September 5, 2025, and it shows `r scales::dollar(sum(mprop$delinquent_total_tax_principal))` in total delinquent property tax principal owed across `r prettyNum(nrow(mprop), big.mark = ",")` properties.^[This total and all other figures discussed in this article are calculated after I removed records from the city's file if the current owner is the City of Milwaukee or another tax exempt non-profit or if the property no longer contains a record in the latest version of the city's property database.]
+
+Of these delinquent taxes, 38% are owed by a residential landlord, 34% by an owner-occupier, and 28% by the owner of a non-residential property. Residential landlords own 44% of the properties which are currently tax delinquent; owner-occupiers own 45%, and non-residential properties make up the last 11%.
+
+```{r}
+mprop |>
+  group_by(status) |>
+  summarise(parcels = n(),
+            value = sum(delinquent_total_tax_principal)) |>
+  mutate(pct_parcels = parcels/sum(parcels)*100,
+         pct_value = value/sum(value)*100) |>
+  gt(rowname_col = "status") |>
+  cols_label(value = "taxes owed",
+             pct_parcels = "parcels",
+             pct_value = "taxes owed") |>
+  tab_spanner("percent of", columns = contains("pct")) |>
+  fmt_number(columns = parcels, decimals = 0) |>
+  fmt_currency(value, decimals = 0) |>
+  fmt_percent(contains("pct"), decimals = 0, scale_values = F) |>
+  tab_style(cell_text(align = "right"), cells_stub()) |>
+  tab_header(title = "Delinquent Property Taxes by Property Type",
+             subtitle = "City of Milwaukee, 5 September 2025")
+```
+
+Landlords often divide their properties between many different LLCs, making it hard to tell how much they really owe. Our website [mkepropertyownership.com](https://mkepropertyownership.com/) links individual LLCs (and other owner names) based on shared business addresses. To be sure, the individual LLCs are legally distinct, and it's often impossible to conclusively prove they share the same beneficial ownership. Still, these connections create useful *ownership networks*, which are in many cases almost certainly a single distinct landlord.
+
+Here are the ownership networks which owe the most in delinquent property taxes among all residential landlords in the city.
+
+```{r}
+taxes.by.network |>
+  slice_max(order_by = taxes_owed, n = 15) |>
+  mutate(site = URLencode(paste0("https://mkepropertyownership.com/owner_groups/", final_group))) |>
+  gt(rowname_col = "final_group") |>
+  fmt_url(columns = site, label = "details") |>
+  cols_merge(columns = c(final_group, site),
+             pattern = "{1} ({2})") |>
+  fmt_currency(columns = taxes_owed, decimals = 0) |>
+  cols_label(taxes_owed = "owed") |>
+  tab_header(title = "Top 15 Landlord Networks by Delinquent Taxes Owed",
+             subtitle = "in the City of Milwaukee as of 9/5/2025") |>
+  tab_stubhead("click 'details' to learn more about this network")
+```
+
+These top-owing ownership networks cover a range of landlord types. Some of them own just a handful of apartment buildings (with large and unpaid tax bills). Others owe small tax bills for many single family rentals or duplexes.
+
+For example, the [Historic Garfield Apartments LLC etc Group](https://mkepropertyownership.com/owner_groups/HISTORIC%20GARFIELD%20APARTMENTS%20LLC%20etc%20Group) owes $548,008 in unpaid taxes for two large apartment buildings, one at 333 W State and the other at 758 N Broadway.
+
+The [251 Bradley Place LLC Group](https://mkepropertyownership.com/owner_groups/251%20BRADLEY%20PLACE%20LLC%20etc%20Group) owes $409,334 across 48 delinquent properties. The [ownership structure](https://mkepropertyownership.com/images/networks/251%20BRADLEY%20PLACE%20LLC%20etc%20Group.svg) of this group is opaque, but many of the LLCs list a house owned by the [notorious Milwaukee landlord Elijah Rashaed](https://www.jsonline.com/story/news/2021/02/19/milwaukee-officials-thought-they-ousted-notorious-landlord-hes-back/6747426002/) as their principal office. Other properties are connected to a West Palm Beach property also evidently [owned by Rashaed](https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=BWBPROPERTY%20L170000901890&aggregateId=flal-l17000090189-0a08fcf9-d2c1-4ccd-b034-d53b96529101&searchTerm=BW%20BOWLING%20PROPERTIES%20LP&listNameOrder=BWBOYDSTON%20K341870).
+
+Ownership of the [RESIDENTIAL PROPERTIES RESOU etc Group](RESIDENTIAL PROPERTIES RESOU etc Group) is more clear. This is the Highgrove Holdings portfolio, originally operating out of Torrance, California. Highgrove took down their website for investors earlier this year, but it is still visible on the [Internet Archive](https://web.archive.org/web/20250410063251/https://www.highgroveholdings.com/). Properties owned by this web of LLCs collectively owe $301,560 in delinquent taxes.
+
+Like Highgrove, the [Fountainhead Contracting LLC etc Group](https://mkepropertyownership.com/owner_groups/FOUNTAINHEAD%20CONTRACTING%20LLC%20etc%20Group) also owns many duplexes and single family rentals. Across 73 delinquent properties, Fountainhead owes the city $239,829 in late taxes. (Perhaps it is unsurprising that a company presumably named in reference to Ayn Rand would be reluctant to pay its taxes.) The LLCs in this network are mainly connected to a residential address in Muskego, a Waukesha County suburb.
