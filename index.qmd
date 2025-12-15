@@ -116,6 +116,8 @@ Links are arranged thematically by reverse chronological order.
 
 ## Housing
 
+[The Cost of Building Milwaukee’s Historic Working Class Housing and Who Could Afford It](posts/2025/historic-wages-and-new-construction-costs.html)
+
 [Landlords Owe More Delinquent Taxes than Homeowners in Milwaukee](posts/2025/mke-tax-delinquency.html)
 
 [The prohibitive cost of building housing in Milwaukee](posts/2025/milwaukee-cost-of-construction.html)

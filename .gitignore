@@ -6,3 +6,5 @@
 personal-website.Rproj
 
 /.quarto/
+
+**/*.quarto_ipynb

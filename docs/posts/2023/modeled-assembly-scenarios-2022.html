@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0278affe3a286796c54ecfd9c2c794d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a040d764a33e38c6be8907b760af890d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -96,7 +97,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -668,13 +669,13 @@ window.Quarto = {
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<th colspan="4" class="gt_heading gt_title gt_font_normal" style="font-size: x-large; font-weight: bold">Partisan implications of selected real and hypothetical WI Assembly Maps</th>
+<td colspan="4" class="gt_heading gt_title gt_font_normal" style="font-size: x-large; font-weight: bold">Partisan implications of selected real and hypothetical WI Assembly Maps</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-size: large; font-weight: bold">Based on the results of the November 2022 general election</th>
+<td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-size: large; font-weight: bold">Based on the results of the November 2022 general election</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="Assembly District Map" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Assembly District Map</th>
@@ -688,85 +689,85 @@ window.Quarto = {
 </thead>
 <tbody class="gt_table_body">
 <tr class="gt_group_heading_row odd">
-<td colspan="4" id="Districts established in 2022" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Districts established in 2022</td>
+<th colspan="4" id="Districts established in 2022" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Districts established in 2022</th>
 </tr>
 <tr class="gt_row_group_first even">
-<td id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</td>
+<th id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</th>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_1 final_wsa"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>4</sup></span>&nbsp;35 seats</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_1 GOV">39 seats</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_1 USS">35 seats</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</td>
+<th id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</th>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_2 final_wsa">−7.8 pts</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_2 GOV">−11.8 pts</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_2 USS">−7.0 pts</td>
 </tr>
 <tr class="even">
-<td id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</td>
+<th id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</th>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_3 final_wsa">17.1 pts</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_3 GOV">8.9 pts</td>
 <td class="gt_row gt_right" headers="Districts established in 2022 stub_1_3 USS">14.0 pts</td>
 </tr>
 <tr class="gt_group_heading_row odd">
-<td colspan="4" id="Districts used from 2012-20" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Districts used from 2012-20</td>
+<th colspan="4" id="Districts used from 2012-20" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Districts used from 2012-20</th>
 </tr>
 <tr class="gt_row_group_first even">
-<td id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</td>
+<th id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</th>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_4 final_wsa">36 seats</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_4 GOV">45 seats</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_4 USS">37 seats</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</td>
+<th id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</th>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_5 final_wsa">−9.5 pts</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_5 GOV">−12.3 pts</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_5 USS">−7.6 pts</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</td>
+<th id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</th>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_6 final_wsa">13.8 pts</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_6 GOV">5.0 pts</td>
 <td class="gt_row gt_right" headers="Districts used from 2012-20 stub_1_6 USS">11.5 pts</td>
 </tr>
 <tr class="gt_group_heading_row odd">
-<td colspan="4" id="Evers least change" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Evers least change</td>
+<th colspan="4" id="Evers least change" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">Evers least change</th>
 </tr>
 <tr class="gt_row_group_first even">
-<td id="stub_1_7" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</td>
+<th id="stub_1_7" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</th>
 <td class="gt_row gt_right" headers="Evers least change stub_1_7 final_wsa">39 seats</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_7 GOV">47 seats</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_7 USS">39 seats</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_8" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</td>
+<th id="stub_1_8" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</th>
 <td class="gt_row gt_right" headers="Evers least change stub_1_8 final_wsa">−10.1 pts</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_8 GOV">−12.4 pts</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_8 USS">−7.5 pts</td>
 </tr>
 <tr class="even">
-<td id="stub_1_9" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</td>
+<th id="stub_1_9" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</th>
 <td class="gt_row gt_right" headers="Evers least change stub_1_9 final_wsa">11.9 pts</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_9 GOV">1.6 pts</td>
 <td class="gt_row gt_right" headers="Evers least change stub_1_9 USS">7.3 pts</td>
 </tr>
 <tr class="gt_group_heading_row odd">
-<td colspan="4" id="People's Map Commission" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">People's Map Commission</td>
+<th colspan="4" id="People's Map Commission" class="gt_group_heading" data-quarto-table-cell-role="th" style="font-weight: bold" scope="colgroup">People's Map Commission</th>
 </tr>
 <tr class="gt_row_group_first even">
-<td id="stub_1_10" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</td>
+<th id="stub_1_10" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">seats won by Dems</th>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_10 final_wsa">43 seats</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_10 GOV">53 seats</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_10 USS">44 seats</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_11" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</td>
+<th id="stub_1_11" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for GOP supermajority</th>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_11 final_wsa">−10.4 pts</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_11 GOV">−13.0 pts</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_11 USS">−7.9 pts</td>
 </tr>
 <tr class="even">
-<td id="stub_1_12" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</td>
+<th id="stub_1_12" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row" style="text-align: right; font-style: italic; text-indent: 10px;">swing needed for Dem majority</th>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_12 final_wsa">6.9 pts</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_12 GOV">−0.2 pts</td>
 <td class="gt_row gt_right" headers="People's Map Commission stub_1_12 USS">3.4 pts</td>
@@ -823,10 +824,10 @@ window.Quarto = {
 \]</span></p>
 <p>Here are the results of each model.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">model v1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">model v2</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">model v1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">model v2</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<table class="caption-top table" data-quarto-postprocess="true">
+<table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td colspan="2" style="border-bottom: 1px solid black"></td>
@@ -940,7 +941,7 @@ window.Quarto = {
 </table>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<table class="caption-top table" data-quarto-postprocess="true">
+<table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td colspan="2" style="border-bottom: 1px solid black"></td>
@@ -1177,13 +1178,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
