@@ -13,6 +13,8 @@ website:
         href: weather-graphs.qmd
       - text: "External Links"
         href: external-links.qmd
+      - text: "Datasets"
+        href: datasets.qmd
       - text: "Blue Book Newsletter"
         href: https://bluebookmke.substack.com/
         target: _blank

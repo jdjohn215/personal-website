@@ -1,0 +1,28 @@
+---
+title: "Datasets"
+---
+
+* [Wisconsin Elections Archive](https://github.com/jdjohn215/wisc-elections-archive)
+  * integrated, official election results at the reporting unit and aggregated to municipalities, minor civil divisions, and counties
+  * matched to unique Census geography codes
+
+* [A version of Milwaukee's Master Property File (MPROP) with landlord network codes](https://github.com/jdjohn215/mke-owner-networks/blob/main/data/final-output/LandlordProperties-with-OwnerNetworks.csv)
+  * This is the data underpinning the [Milwaukee Property Ownership Network](https://www.mkepropertyownership.com/) website.
+  * It is a version of the MPROP file limited to residential landlords, which includes codes linking landlords across different legal names (e.g. LLCs)
+  * Updated daily
+
+* Historic Wisconsin election results aggregated into current state legislative district boundaries.
+  * Past elections were held under different districts, and the wards used in those elections often straddled the lines of the new districts. To create these files, I used crosswalks to disaggregated old ward or reporting unit election results into the new district boundaries. Allocated votes may be fractional.
+  * Elections included: 2025 state supreme court, 2024 state legislative, 2012-2022 races for president, governor, and US senator
+  * The data is available in 3 formats
+    * [long format](datasets/votes_2012to2025_long.csv). 1 row for every district and election, with columns for total votes, Democratic votes, Republican votes, Democratic percent of the 2-party vote, and margin (calculated as Democratic % of the total vote minus Republican % of the total vote).
+    * [wide format, Democratic % of the 2-party vote](datasets/votes_2012to2025_wide_dem2partypct.csv). In this file each election is its own column, with the column containing the Democratic candidate's share of the 2-party vote.
+    * [wide format, margin](datasets/votes_2012to2025_wide_demmargin.csv). In this file each election is its own column, with the column containing the margin, calculated this way: `(Dem votes / total votes - Rep votes / votal votes) * 100`.
+  * The data includes the 2025 Wisconsin Supreme Court election, which was officially nonpartisan. To match the data scheme used in these files, I label Susan Crawford a Democrat and Brad Schimel a Republican.
+  * The file uses the following abbreviations:
+    * WSA = Wisconsin State Assembly
+    * WSS = Wisconsin State Senate
+    * WSC = Wisconsin Supreme Court
+    * PRE = President
+    * GOV = Governor
+    * USS = US Senator
