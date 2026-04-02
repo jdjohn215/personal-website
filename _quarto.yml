@@ -40,4 +40,5 @@ format:
 
 execute:
   freeze: auto
+  echo: false
 
