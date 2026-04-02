@@ -11,6 +11,8 @@ website:
         href: index.qmd
       - text: "Milw Weather"
         href: weather-graphs.qmd
+      - text: "Book Reviews"
+        href: book-reviews.qmd
       - text: "External Links"
         href: external-links.qmd
       - text: "Datasets"
