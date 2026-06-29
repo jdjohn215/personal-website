@@ -23,6 +23,10 @@ website:
       - about.qmd
   google-analytics: "G-31XDQG3G4L"
 
+resources:
+    - CNAME
+    - .nojekyll
+
 lightbox: true
 
 format:
