@@ -10,11 +10,6 @@ To that end, this website includes various personal and professional written pro
 
 If you find something that interests you, feel free to email me at jdjohn215 [at] gmail [dot] com.
 
-::: {style="float: left; margin: 5px;"}
-![](site-assets/john-simon.png){width="250px"}
-:::
-
-
 ## about me
 
 I live in Milwaukee, Wisconsin where I'm employed as a Research Fellow at the Marquette University Law School. At work, I mainly study housing, demographics, and elections in Wisconsin. Other interests I occasionally write about include ecology, geography, 20th century history, and American religion.

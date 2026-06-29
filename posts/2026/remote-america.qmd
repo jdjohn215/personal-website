@@ -1,0 +1,137 @@
+---
+title: "The Remotest Places in the Lower 48"
+format: html
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+library(tidyverse)
+library(sf)
+library(pmtiles)
+library(mapgl)
+library(reactable)
+
+r2_url <- "https://pub-b2b058e01ec442709562f5fb5aef868c.r2.dev/lower48-points-and-polygons.pmtiles"
+
+state.summary <- read_csv(here::here("~/Desktop/Projects/osm/remote/summary-stats/state-totals.csv")) |>
+  select(-`NA`)
+points <- st_read(here::here("~/Desktop/Projects/osm/remote/lower48-1mile-points_v2.geojson"))
+furthest.points <- points |>
+  group_by(STUSPS) |>
+  slice_max(order_by = distance_mi, n = 1) |>
+  ungroup() |>
+  mutate(label = paste("The furthest point from a road in", STUSPS,
+                       "is", round(distance_mi, 2), "miles."))
+```
+
+This map shows the places furthest from a road in the coterminous United States (the "lower 48"). Green polygons cover the areas at least 1 mile from a road. Zoom in to each polygon to reveal a point showing the furthest interior point of that polygon. The large red markers show the remotest points in each state. Click on the features to learn more about them.
+
+```{r map}
+#| column: page-inset
+maplibre(
+  style = carto_style("positron"),
+  center = c(-98.58, 39.82),
+  zoom = 3,
+  height = "70vh",
+  scrollZoom = TRUE
+) |>
+  add_raster_source(
+    id = "esri-satellite",
+    tiles = c("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"),
+    tileSize = 256,
+    attribution = "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+  ) |>
+  add_pmtiles_source(
+    id = "pm",
+    url = r2_url
+  ) |>
+  add_fill_layer(
+    id = "polygons",
+    source = "pm",
+    source_layer = "polygons",
+    fill_color = "forestgreen",
+    fill_opacity = 0.5,
+    tooltip = "label",
+    popup = "tooltip") |>
+  add_circle_layer(
+    id = "points",
+    source = "pm",
+    source_layer = "points",
+    circle_color = "#d95f02",
+    circle_opacity = 1,
+    circle_radius = 5,
+    tooltip = "label"
+  ) |>
+  add_markers(
+    data = furthest.points,
+    popup = "label"
+  ) |>
+  add_raster_layer(
+    id = "Satellite",
+    source = "esri-satellite",
+    visibility = "none",
+    before_id = "polygons"
+  ) |>
+  add_layers_control(
+    layers = list("Show satellite imagery" = "Satellite"),
+    position = "bottom-left",
+    collapsible = FALSE
+  ) |>
+  add_control(
+    html = "
+      <details style='max-width:260px; font-family:sans-serif; font-size:13px;
+                      background:white; padding:10px 12px; border-radius:6px;
+                      box-shadow:0 1px 4px rgba(0,0,0,0.2);'>
+        <summary style='font-weight:bold; cursor:pointer;'>About this map</summary>
+        <p style='margin:8px 0 4px;'>
+          This map shows the <strong>furthest areas from a road</strong> in the
+          contiguous United States. Road data is from OpenStreetMap &
+          excludes those classified as 'tracks' which are not part of the standard
+          road network. Tracks are often inaccesible to cars or limited to 4WD.
+        </p>
+        <p style='margin:4px 0;'>
+          <span style='color:forestgreen;'>&#9632;</span> Green areas are a mile or more
+          from the nearest road.
+        </p>
+        <p style='margin:4px 0;'>
+          <span style='color:#d95f02;'>&#9679;</span> Zoom in to see orange points,
+          indicating the furthest point from a road inside each polygon.
+        </p>
+        <p style='margin:4px 0;'>
+          The red markers show the furthest point in each state.
+        </p>
+        <p style='margin:8px 0 0; color:#666;'>
+          Click each polygon to see its values in the 2024 National
+          Land Cover Database.
+        </p>
+      </details>
+    ",
+    position = "top-right"
+  )
+```
+
+## The Remotest Points
+
+It is possible to get at least 1 mile from a road in every state, but only barely. In Connecticut, the furthest point is just 1.5 miles from the nearest road. This point is on Great Captain Island in the Atlantic Ocean. By my calculations, the furthest you can get from a road, on land, in the lower 48 is Point Houghton on Isle Royale in Lake Superior, at 26.1 miles. Runners-up include a point along the Rio Grande near Big Bend National Park in Texas (23.4 miles), a point on the edge of the Florida Everglades (22.4 miles), and a point just west of the Thorofare Ranger Station in Yellowstone National Park (21.7 miles)
+
+This last Wyoming point is the one most commonly cited as the "furthest from a road." All such calculations will vary based on the data included. To create my map, I began with every [road, street, or path](https://wiki.openstreetmap.org/wiki/Key:highway) from OpenStreetMap's public database. Then, I subset just those "highways" accessible to a normal motor vehicle. 
+
+I removed features classified as "tracks," which in North America often refers to old logging roads, desert trails, and agricultural paths used by tractors. In other words, I limit my calculations to the kinds of roads a navigation app might route you down. No doubt, one could drive a 4x4 closer to some of these points. I think this is why other lists exclude the remote Texas spot--there's a [remote dirt track](https://www.openstreetmap.org/way/15138455#map=19/29.749290/-102.609140) nearby. Click "Show satellite imagery" to examine this in more detail for a specific point.
+
+I also decided to remove the Great Lakes and coastal waters from my calculations, but I left the major islands in each and coastal wetlands as well. I think other lists remove these, explaining why they rank Wyoming's point as more remote from a road than Isle Royale or the Everglades.
+
+## States with Greatest and Least Amount of Road Coverage
+
+Another way of thinking about remoteness is measuring what fraction of state's surface is 1 mile or more from the nearest road. States vary enormously by this metric. The most remote is Nevada, where 81.7% of the state is more than a mile from any kind of road a navigation service might send you down. No other state comes anywhere close. Next on the list are Arizona (58%), Utah (57%), and Idaho (53%).
+
+The state with the most road coverage is not Connecticut or another one of the tiny densely populated New England states, but rather Ohio, where 0.02% of the state (fewer than 9 square miles) is a mile or more from the nearest road. Ohio's remotest point, if you're wondering, is 1.6 miles from a road inside the Vinton Furnace State Experimental Forest.
+
+Ohio is closely followed by Iowa, where 0.05% of the state is at least 1 mile removed from a road and Indiana (0.06%).
+
+So far, these patterns of road density conform to common perceptions about America. The mountain west is the most remote, the east much less so, and the flat Midwest least of all. Outside of the western United States, you mainly need to visit river bottoms, coastal wetlands, and mountain ridges to escape the proximity of the road network. 
+
+Major exceptions include the intact wilderness of Upstate New York/New England and the Northwoods of the Upper Great Lakes region, with its heart in the Boundary Waters/Quetico complex west of Lake Superior. 
+
+No 4x4 will help you reach Minnesota's remotest point on Knife Lake, just north of BWCA Campsite #1998. You would be on the border with Canada 15 miles from the nearest road, and if you paddled on into Canada's Quetico Provincial Park, you could travel for miles into even more remote areas among waters flowing north to the Hudson Bay. 
+
+The remotest point of this great roadless region straddling the United States and Canada is on land just east of Hurlburt Lake in Quetico Provincial Park. It is 23.5 miles from the nearest road, making it more remote from the automobile network than any point in the entire Western United States.
